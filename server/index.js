@@ -74,12 +74,17 @@ app.post("/api/reports", (req, res) => {
   try {
     const b = req.body ?? {};
     if (!b.description) throw new Error("description required");
+    // When the two-question cap forces a report with nothing to go on, Claude
+    // fills location with a placeholder. Store that as absent, not as a street.
+    const loc = b.location_text?.trim();
+    const locationText =
+      !loc || /^<?unknown>?$|^n\/?a$|^unspecified$/i.test(loc) ? null : loc;
     // Never guess a location. Unmatched stores null coords and renders as
     // "location not mapped" rather than dropping the report or faking a pin.
-    const place = geocode(b.location_text);
+    const place = geocode(locationText);
     const report = store.create({
       source: b.source ?? "voice",
-      location_text: b.location_text ?? null,
+      location_text: locationText,
       landmark: b.landmark ?? null,
       category: b.category ?? "other",
       severity: b.severity ?? "medium",

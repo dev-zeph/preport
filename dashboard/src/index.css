@@ -1,0 +1,87 @@
+:root {
+  --bg:#0E1116; --card:#171C24; --line:#252C38; --text:#F2F5F9;
+  --dim:#8D99AB; --accent:#4C8DFF; --warn:#FFB020; --danger:#FF5A5A; --good:#39C07F;
+  color-scheme: dark;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0; background:var(--bg); color:var(--text);
+  font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+button { font:inherit; cursor:pointer; }
+.app { display:flex; flex-direction:column; height:100vh; }
+
+header {
+  display:flex; align-items:center; gap:16px; padding:14px 22px;
+  border-bottom:1px solid var(--line); flex-shrink:0;
+}
+.brand { font-size:19px; font-weight:700; letter-spacing:-0.3px; }
+.brand span { color:var(--dim); font-weight:400; font-size:13px; margin-left:10px; }
+.live { margin-left:auto; display:flex; align-items:center; gap:7px; color:var(--dim); font-size:12px; }
+.dot { width:8px; height:8px; border-radius:50%; background:var(--good); }
+.dot.off { background:var(--danger); }
+@keyframes blink { 50%{opacity:.35} }
+.dot:not(.off) { animation:blink 2s infinite; }
+
+nav { display:flex; gap:4px; padding:0 22px; border-bottom:1px solid var(--line); flex-shrink:0; }
+nav button {
+  background:none; border:0; color:var(--dim); padding:11px 14px;
+  border-bottom:2px solid transparent; font-size:14px;
+}
+nav button.on { color:var(--text); border-bottom-color:var(--accent); }
+
+main { flex:1; overflow:hidden; display:flex; min-height:0; }
+.list { width:420px; border-right:1px solid var(--line); overflow-y:auto; flex-shrink:0; }
+.pane { flex:1; overflow-y:auto; padding:24px; }
+
+.row {
+  padding:13px 18px; border-bottom:1px solid var(--line); cursor:pointer;
+  display:flex; gap:12px; align-items:flex-start;
+}
+.row:hover { background:#1B212B; }
+.row.on { background:#1E2530; box-shadow:inset 3px 0 0 var(--accent); }
+@keyframes arrive { from{background:#24406B} to{background:transparent} }
+.row.new { animation:arrive 2.4s ease-out; }
+.sev { width:9px; height:9px; border-radius:50%; margin-top:6px; flex-shrink:0; }
+.row h4 { margin:0 0 3px; font-size:14px; font-weight:600; }
+.row p { margin:0; color:var(--dim); font-size:12.5px; }
+.row .meta { margin-top:5px; display:flex; gap:8px; color:var(--dim); font-size:11px; }
+
+.tag {
+  display:inline-block; padding:2px 7px; border-radius:4px;
+  border:1px solid var(--line); font-size:11px; color:var(--dim);
+}
+.tag.risk { color:var(--warn); border-color:var(--warn); }
+.tag.seed { color:var(--dim); border-style:dashed; }
+
+h2 { margin:0 0 4px; font-size:21px; }
+h3 { margin:26px 0 10px; font-size:12px; text-transform:uppercase; letter-spacing:1px; color:var(--dim); }
+.muted { color:var(--dim); }
+.kv { display:grid; grid-template-columns:130px 1fr; gap:9px 16px; }
+.kv dt { color:var(--dim); font-size:13px; }
+.kv dd { margin:0; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px; }
+.photo { width:100%; max-width:440px; border-radius:10px; margin-top:12px; }
+
+.statusbar { display:flex; gap:7px; flex-wrap:wrap; margin-top:8px; }
+.statusbar button {
+  background:var(--card); border:1px solid var(--line); color:var(--dim);
+  padding:7px 13px; border-radius:999px;
+}
+.statusbar button.on { background:var(--accent); border-color:var(--accent); color:#fff; font-weight:600; }
+
+details { margin-top:12px; }
+summary { cursor:pointer; color:var(--accent); font-size:13px; }
+.turn { padding:8px 0; border-bottom:1px solid var(--line); font-size:13px; }
+.turn b { color:var(--dim); font-weight:500; }
+
+.note {
+  border-left:3px solid var(--warn); background:#1E1B12;
+  padding:13px 16px; border-radius:0 8px 8px 0; color:#E8D9B5; font-size:13px; line-height:1.6;
+}
+.stats { display:flex; gap:14px; flex-wrap:wrap; margin:14px 0 4px; }
+.stat { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 18px; min-width:150px; }
+.stat b { display:block; font-size:26px; font-weight:700; }
+.stat small { color:var(--dim); font-size:12px; }
+.empty { padding:40px 22px; color:var(--dim); text-align:center; }
+.leaflet-container { height:100%; width:100%; background:#0E1116; border-radius:10px; }
