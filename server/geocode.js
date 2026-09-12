@@ -23,15 +23,23 @@ console.log(`geocode: ${streets.length} Halifax streets loaded`);
 
 const NOT_FOUND = { lat: null, lng: null, district: null, geocode_method: "none" };
 
+// Speech-to-text returns diacritics that the street table does not have:
+// Whisper hears "Gottingen Street" and writes "Göttingen". Fold accents on
+// both sides so the match still lands.
+const fold = (s) =>
+  s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/\s+/g, " ").trim();
+
 export function geocode(locationText) {
   if (!locationText) return NOT_FOUND;
-  const q = locationText.toLowerCase().replace(/\s+/g, " ").trim();
+  const q = fold(locationText);
 
   // Try the full street name, then the same name with the type word dropped
   // ("north street" also matches a stored "north st").
   const hit =
-    streets.find((s) => q.includes(s.match)) ??
-    streets.find((s) => q.includes(s.match.replace(/\s(st|rd|ave|dr|blvd|cres|way|ln|crt)$/, "")));
+    streets.find((s) => q.includes(fold(s.match))) ??
+    streets.find((s) =>
+      q.includes(fold(s.match).replace(/\s(st|rd|ave|dr|blvd|cres|way|ln|crt)$/, ""))
+    );
 
   if (!hit) return NOT_FOUND;
   return { lat: hit.lat, lng: hit.lng, district: hit.district, geocode_method: "lookup" };
