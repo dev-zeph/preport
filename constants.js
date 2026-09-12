@@ -32,3 +32,19 @@ export const STATUSES = ["new", "acknowledged", "assigned", "resolved"];
 export const SEVERITIES = ["low", "medium", "high"];
 
 export const SOURCES = ["voice", "text", "hrm_import"];
+
+// Claude has returned both "en" and "English" for the same field, so the stored
+// value is normalised rather than trusted. Two-letter ISO 639-1, lowercase.
+const LANGUAGE_NAMES = {
+  english: "en", french: "fr", français: "fr", francais: "fr", arabic: "ar",
+  spanish: "es", mandarin: "zh", chinese: "zh", hindi: "hi", punjabi: "pa",
+  tagalog: "tl", german: "de", portuguese: "pt", russian: "ru", urdu: "ur",
+  farsi: "fa", persian: "fa", korean: "ko", japanese: "ja", vietnamese: "vi",
+};
+
+export function normaliseLanguage(value) {
+  const v = String(value ?? "").trim().toLowerCase();
+  if (!v) return "en";
+  if (/^[a-z]{2}$/.test(v)) return v;
+  return LANGUAGE_NAMES[v] ?? v.slice(0, 2);
+}

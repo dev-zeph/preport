@@ -43,11 +43,22 @@ const FILE_REPORT = {
       safety_risk: { type: "boolean" },
       description: { type: "string" },
       photo_helpful: { type: "boolean" },
-      language: { type: "string" },
+      language: {
+        type: "string",
+        description: "The resident's language as a two-letter ISO 639-1 code, lowercase: \"en\", \"fr\", \"ar\". Not the language name.",
+      },
+      closing: {
+        type: "string",
+        description:
+          "One or two short sentences spoken aloud to the resident to close the " +
+          "conversation, confirming you have what you need and that it is going " +
+          "to the city. Warm and conversational, the way a person would say it. " +
+          "In the resident's own language.",
+      },
     },
     required: [
       "location_text", "category", "severity", "safety_risk",
-      "description", "photo_helpful", "language",
+      "description", "photo_helpful", "language", "closing",
     ],
   },
 };
@@ -75,8 +86,15 @@ Rules:
   things that are self-evident from the description.
 - The resident may speak any language. Reply in the language they used, but write
   the description field in English so city staff can read it. Record their
-  language in the language field.
-- description is one or two plain sentences for a work crew. No editorialising.`;
+  language as a two-letter code in the language field: "en", "fr", "ar".
+- description is one or two plain sentences for a work crew. No editorialising.
+- closing is the opposite of description: it is SPOKEN to the resident, in their
+  language, and it should sound like a person rather than a form. Confirm you
+  have what you need and that it is going to the city. One or two short
+  sentences, warm, no jargon, no reference numbers, and plain punctuation with
+  no dashes. For example: "Got it,
+  thanks. That's everything I need, I'll send this over to Public Works right
+  away." Vary it naturally; do not repeat the example verbatim every time.`;
 
 /**
  * @param {{role:"user"|"assistant", content:string}[]} messages
