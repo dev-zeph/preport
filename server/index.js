@@ -6,9 +6,12 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import * as store from "./store.js";
+import { supabase, enabled as supabaseEnabled, PHOTO_BUCKET } from "./supabase.js";
 import { converse, modelName } from "./claude.js";
 import { transcribe } from "./transcribe.js";
 import { geocode, streetCount } from "./geocode.js";
+import { speak, voiceName, CACHE as SPEECH } from "./speak.js";
+import { normaliseLanguage } from "../constants.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PHOTOS = join(__dirname, "photos");
@@ -25,6 +28,7 @@ app.use((req, res, next) => {
   req.method === "OPTIONS" ? res.sendStatus(204) : next();
 });
 app.use("/photos", express.static(PHOTOS));
+app.use("/speech", express.static(SPEECH, { maxAge: "1h" }));
 
 // Errors are returned as JSON with a readable message. The app renders them
 // on screen rather than failing silently, so a bad demo is debuggable.
@@ -37,11 +41,13 @@ app.get("/api/health", (_req, res) =>
   res.json({
     ok: true,
     model: modelName(),
+    voice: voiceName(),
     reports: store.list().length,
     streets: streetCount(),
     sse_clients: store.clientCount(),
     anthropic_key: Boolean(process.env.ANTHROPIC_API_KEY),
     openai_key: Boolean(process.env.OPENAI_API_KEY),
+    supabase: supabaseEnabled ? (store.isLive() ? "live" : "configured, unreachable") : "off",
   })
 );
 
@@ -68,9 +74,22 @@ app.post("/api/converse", async (req, res) => {
   }
 });
 
+// Speech for the follow-up question. Returns a URL rather than bytes so the app
+// can hand it straight to the audio player, and so a repeated question is served
+// from cache without a second round trip to OpenAI.
+app.post("/api/speak", async (req, res) => {
+  try {
+    const { url, cached } = await speak(req.body?.text, { language: req.body?.language });
+    console.log(`  speak ${cached ? "(cached)" : "(synthesised)"} ${url}`);
+    res.json({ url, absolute: `${req.protocol}://${req.get("host")}${url}` });
+  } catch (e) {
+    fail(res, 500, e);
+  }
+});
+
 app.get("/api/reports", (_req, res) => res.json(store.list()));
 
-app.post("/api/reports", (req, res) => {
+app.post("/api/reports", async (req, res) => {
   try {
     const b = req.body ?? {};
     if (!b.description) throw new Error("description required");
@@ -82,7 +101,7 @@ app.post("/api/reports", (req, res) => {
     // Never guess a location. Unmatched stores null coords and renders as
     // "location not mapped" rather than dropping the report or faking a pin.
     const place = geocode(locationText);
-    const report = store.create({
+    const report = await store.create({
       source: b.source ?? "voice",
       location_text: locationText,
       landmark: b.landmark ?? null,
@@ -90,7 +109,7 @@ app.post("/api/reports", (req, res) => {
       severity: b.severity ?? "medium",
       safety_risk: Boolean(b.safety_risk),
       description: b.description,
-      language: b.language ?? "en",
+      language: normaliseLanguage(b.language),
       transcript: b.transcript ?? [],
       ...place,
     });
@@ -101,21 +120,39 @@ app.post("/api/reports", (req, res) => {
   }
 });
 
-app.post("/api/reports/:id/photo", upload.single("photo"), (req, res) => {
+app.post("/api/reports/:id/photo", upload.single("photo"), async (req, res) => {
   try {
     if (!req.file) throw new Error("no photo in request");
     if (!store.get(req.params.id)) throw new Error(`no report ${req.params.id}`);
     const name = `${req.params.id}.jpg`;
+
+    // Always keep a local copy: it is the fallback if the upload below fails,
+    // and it keeps the server self-sufficient with Supabase switched off.
     writeFileSync(join(PHOTOS, name), req.file.buffer);
-    const report = store.update(req.params.id, { photo: `/photos/${name}` });
+    let url = `/photos/${name}`;
+
+    // Storage means the photo outlives this laptop, which a path under
+    // server/photos/ does not.
+    if (supabaseEnabled) {
+      const { error } = await supabase.storage
+        .from(PHOTO_BUCKET)
+        .upload(name, req.file.buffer, { contentType: "image/jpeg", upsert: true });
+      if (error) {
+        console.error(`  ! photo upload to supabase failed: ${error.message}`);
+      } else {
+        url = supabase.storage.from(PHOTO_BUCKET).getPublicUrl(name).data.publicUrl;
+      }
+    }
+
+    const report = await store.update(req.params.id, { photo: url });
     res.json({ ok: true, photo: report.photo });
   } catch (e) {
     fail(res, 400, e);
   }
 });
 
-app.patch("/api/reports/:id", (req, res) => {
-  const report = store.update(req.params.id, { status: req.body.status });
+app.patch("/api/reports/:id", async (req, res) => {
+  const report = await store.update(req.params.id, { status: req.body.status });
   report ? res.json(report) : res.status(404).json({ error: "not found" });
 });
 
@@ -145,8 +182,10 @@ app.get("/api/stream", (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
+await store.hydrate();
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`repoth server  :${PORT}   model ${modelName()}`);
   if (!process.env.ANTHROPIC_API_KEY) console.log("  ! ANTHROPIC_API_KEY not set");
   if (!process.env.OPENAI_API_KEY) console.log("  ! OPENAI_API_KEY not set");
+  console.log(`  supabase ${supabaseEnabled ? (store.isLive() ? "live" : "configured but unreachable") : "off"}`);
 });

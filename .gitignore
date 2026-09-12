@@ -7,3 +7,4 @@ server/photos/
 dist/
 .expo/
 *.log
+server/speech/

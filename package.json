@@ -4,12 +4,14 @@
   "type": "module",
   "description": "Voice-first municipal incident reporting. Claude Community Impact Lab Halifax.",
   "scripts": {
-    "dev": "node server/index.js",
+    "dev": "node --env-file-if-exists=.env server/index.js",
     "pull-data": "node scripts/pull-data.js",
     "dashboard": "npm --prefix dashboard run dev",
-    "app": "npm --prefix app start"
+    "app": "npm --prefix app start",
+    "migrate": "node --env-file-if-exists=.env scripts/migrate-to-supabase.js"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.116.0",
     "express": "^5.1.0",
     "multer": "^2.0.2",
     "nanoid": "^5.1.6"
