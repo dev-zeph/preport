@@ -1,0 +1,17 @@
+{
+  "name": "repoth",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Voice-first municipal incident reporting. Claude Community Impact Lab Halifax.",
+  "scripts": {
+    "dev": "node server/index.js",
+    "pull-data": "node scripts/pull-data.js",
+    "dashboard": "npm --prefix dashboard run dev",
+    "app": "npm --prefix app start"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "multer": "^2.0.2",
+    "nanoid": "^5.1.6"
+  }
+}

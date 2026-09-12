@@ -1,0 +1,5714 @@
+[
+  {
+    "match": "bedford hwy",
+    "lat": 44.70188,
+    "lng": -63.6613,
+    "district": "District 16",
+    "n": 133
+  },
+  {
+    "match": "barrington st",
+    "lat": 44.64921,
+    "lng": -63.57507,
+    "district": "District 7",
+    "n": 121
+  },
+  {
+    "match": "spring garden rd",
+    "lat": 44.64231,
+    "lng": -63.5797,
+    "district": "District 7",
+    "n": 101
+  },
+  {
+    "match": "mackintosh st",
+    "lat": 44.66654,
+    "lng": -63.62067,
+    "district": "District 8",
+    "n": 97
+  },
+  {
+    "match": "herring cove rd",
+    "lat": 44.61167,
+    "lng": -63.61635,
+    "district": "District 11",
+    "n": 87
+  },
+  {
+    "match": "portland st",
+    "lat": 44.6686,
+    "lng": -63.54676,
+    "district": "District 5",
+    "n": 81
+  },
+  {
+    "match": "alderney dr",
+    "lat": 44.66502,
+    "lng": -63.56976,
+    "district": "District 5",
+    "n": 78
+  },
+  {
+    "match": "hollis st",
+    "lat": 44.64278,
+    "lng": -63.57017,
+    "district": "District 7",
+    "n": 77
+  },
+  {
+    "match": "st margarets bay rd",
+    "lat": 44.64435,
+    "lng": -63.72282,
+    "district": "District 13",
+    "n": 76
+  },
+  {
+    "match": "gottingen st",
+    "lat": 44.65263,
+    "lng": -63.58408,
+    "district": "District 8",
+    "n": 74
+  },
+  {
+    "match": "lacewood dr",
+    "lat": 44.66088,
+    "lng": -63.66375,
+    "district": "District 12",
+    "n": 73
+  },
+  {
+    "match": "cogswell st",
+    "lat": 44.64878,
+    "lng": -63.58797,
+    "district": "District 7",
+    "n": 70
+  },
+  {
+    "match": "agricola st",
+    "lat": 44.65691,
+    "lng": -63.59512,
+    "district": "District 8",
+    "n": 69
+  },
+  {
+    "match": "lower water st",
+    "lat": 44.64474,
+    "lng": -63.57026,
+    "district": "District 7",
+    "n": 62
+  },
+  {
+    "match": "robie st",
+    "lat": 44.64961,
+    "lng": -63.592,
+    "district": "District 8",
+    "n": 60
+  },
+  {
+    "match": "south park st",
+    "lat": 44.64027,
+    "lng": -63.57845,
+    "district": "District 7",
+    "n": 60
+  },
+  {
+    "match": "turner dr",
+    "lat": 44.7116,
+    "lng": -63.5967,
+    "district": "District 6",
+    "n": 59
+  },
+  {
+    "match": "larry uteck blvd",
+    "lat": 44.70142,
+    "lng": -63.67802,
+    "district": "District 16",
+    "n": 58
+  },
+  {
+    "match": "bently dr",
+    "lat": 44.64955,
+    "lng": -63.65591,
+    "district": "District 12",
+    "n": 57
+  },
+  {
+    "match": "nadia dr",
+    "lat": 44.68428,
+    "lng": -63.59354,
+    "district": "District 5",
+    "n": 56
+  },
+  {
+    "match": "hammonds plains rd",
+    "lat": 44.72516,
+    "lng": -63.73203,
+    "district": "District 14",
+    "n": 54
+  },
+  {
+    "match": "windmill rd",
+    "lat": 44.677,
+    "lng": -63.59178,
+    "district": "District 5",
+    "n": 53
+  },
+  {
+    "match": "parkland dr",
+    "lat": 44.66642,
+    "lng": -63.67512,
+    "district": "District 12",
+    "n": 49
+  },
+  {
+    "match": "sackville dr",
+    "lat": 44.76959,
+    "lng": -63.68886,
+    "district": "District 15",
+    "n": 48
+  },
+  {
+    "match": "joseph howe dr",
+    "lat": 44.65364,
+    "lng": -63.62993,
+    "district": "District 9",
+    "n": 48
+  },
+  {
+    "match": "brunswick st",
+    "lat": 44.65236,
+    "lng": -63.58072,
+    "district": "District 8",
+    "n": 48
+  },
+  {
+    "match": "young st",
+    "lat": 44.65639,
+    "lng": -63.60701,
+    "district": "District 9",
+    "n": 45
+  },
+  {
+    "match": "north st",
+    "lat": 44.65546,
+    "lng": -63.59373,
+    "district": "District 8",
+    "n": 45
+  },
+  {
+    "match": "almon st",
+    "lat": 44.65427,
+    "lng": -63.60272,
+    "district": "District 8",
+    "n": 43
+  },
+  {
+    "match": "oxford st",
+    "lat": 44.64729,
+    "lng": -63.60146,
+    "district": "District 9",
+    "n": 42
+  },
+  {
+    "match": "waverley rd",
+    "lat": 44.71623,
+    "lng": -63.54789,
+    "district": "District 6",
+    "n": 42
+  },
+  {
+    "match": "quinpool rd",
+    "lat": 44.64457,
+    "lng": -63.60039,
+    "district": "District 9",
+    "n": 42
+  },
+  {
+    "match": "knightsridge dr",
+    "lat": 44.67039,
+    "lng": -63.66126,
+    "district": "District 10",
+    "n": 40
+  },
+  {
+    "match": "connaught ave",
+    "lat": 44.64763,
+    "lng": -63.60793,
+    "district": "District 9",
+    "n": 40
+  },
+  {
+    "match": "victoria rd",
+    "lat": 44.67047,
+    "lng": -63.57728,
+    "district": "District 5",
+    "n": 39
+  },
+  {
+    "match": "clifton st",
+    "lat": 44.65481,
+    "lng": -63.59756,
+    "district": "District 8",
+    "n": 38
+  },
+  {
+    "match": "viridian dr",
+    "lat": 44.68846,
+    "lng": -63.56691,
+    "district": "District 5",
+    "n": 38
+  },
+  {
+    "match": "rowe ave",
+    "lat": 44.65435,
+    "lng": -63.62872,
+    "district": "District 9",
+    "n": 37
+  },
+  {
+    "match": "windsor st",
+    "lat": 44.65427,
+    "lng": -63.60272,
+    "district": "District 8",
+    "n": 37
+  },
+  {
+    "match": "purcells cove rd",
+    "lat": 44.62502,
+    "lng": -63.60476,
+    "district": "District 11",
+    "n": 37
+  },
+  {
+    "match": "caldwell rd",
+    "lat": 44.65809,
+    "lng": -63.49061,
+    "district": "District 4",
+    "n": 37
+  },
+  {
+    "match": "dunbrack st",
+    "lat": 44.65368,
+    "lng": -63.65026,
+    "district": "District 10",
+    "n": 36
+  },
+  {
+    "match": "old sambro rd",
+    "lat": 44.61366,
+    "lng": -63.62212,
+    "district": "District 11",
+    "n": 35
+  },
+  {
+    "match": "bayers rd",
+    "lat": 44.65292,
+    "lng": -63.61601,
+    "district": "District 9",
+    "n": 34
+  },
+  {
+    "match": "fleetview dr",
+    "lat": 44.69783,
+    "lng": -63.67113,
+    "district": "District 16",
+    "n": 32
+  },
+  {
+    "match": "cowie hill rd",
+    "lat": 44.62732,
+    "lng": -63.6231,
+    "district": "District 11",
+    "n": 31
+  },
+  {
+    "match": "grassy lake dr",
+    "lat": 44.62944,
+    "lng": -63.67028,
+    "district": "District 13",
+    "n": 31
+  },
+  {
+    "match": "nantucket ave",
+    "lat": 44.67056,
+    "lng": -63.57452,
+    "district": "District 5",
+    "n": 29
+  },
+  {
+    "match": "highway 7",
+    "lat": 44.70477,
+    "lng": -63.46315,
+    "district": "District 4",
+    "n": 29
+  },
+  {
+    "match": "highway 2",
+    "lat": 44.83756,
+    "lng": -63.60762,
+    "district": "District 1",
+    "n": 29
+  },
+  {
+    "match": "king st",
+    "lat": 44.66578,
+    "lng": -63.56773,
+    "district": "District 5",
+    "n": 28
+  },
+  {
+    "match": "eliza ritchie cres",
+    "lat": 44.67332,
+    "lng": -63.66005,
+    "district": "District 10",
+    "n": 27
+  },
+  {
+    "match": "sackville st",
+    "lat": 44.6452,
+    "lng": -63.57778,
+    "district": "District 7",
+    "n": 27
+  },
+  {
+    "match": "queen st",
+    "lat": 44.64471,
+    "lng": -63.57341,
+    "district": "District 7",
+    "n": 27
+  },
+  {
+    "match": "cole harbour rd",
+    "lat": 44.67253,
+    "lng": -63.48305,
+    "district": "District 4",
+    "n": 26
+  },
+  {
+    "match": "farnham gate rd",
+    "lat": 44.67182,
+    "lng": -63.67039,
+    "district": "District 12",
+    "n": 26
+  },
+  {
+    "match": "main st",
+    "lat": 44.68446,
+    "lng": -63.53138,
+    "district": "District 6",
+    "n": 26
+  },
+  {
+    "match": "cow bay rd",
+    "lat": 44.61632,
+    "lng": -63.46609,
+    "district": "District 3",
+    "n": 26
+  },
+  {
+    "match": "pepperell st",
+    "lat": 44.64573,
+    "lng": -63.59372,
+    "district": "District 9",
+    "n": 25
+  },
+  {
+    "match": "cunard st",
+    "lat": 44.65131,
+    "lng": -63.58968,
+    "district": "District 8",
+    "n": 25
+  },
+  {
+    "match": "main rd",
+    "lat": 44.62083,
+    "lng": -63.50491,
+    "district": "District 3",
+    "n": 25
+  },
+  {
+    "match": "dawson st",
+    "lat": 44.66945,
+    "lng": -63.5815,
+    "district": "District 5",
+    "n": 25
+  },
+  {
+    "match": "kaye st",
+    "lat": 44.66297,
+    "lng": -63.59824,
+    "district": "District 8",
+    "n": 25
+  },
+  {
+    "match": "beaver bank rd",
+    "lat": 44.81343,
+    "lng": -63.68738,
+    "district": "District 15",
+    "n": 24
+  },
+  {
+    "match": "devonshire ave",
+    "lat": 44.66683,
+    "lng": -63.60044,
+    "district": "District 8",
+    "n": 24
+  },
+  {
+    "match": "chebucto rd",
+    "lat": 44.64708,
+    "lng": -63.60823,
+    "district": "District 9",
+    "n": 24
+  },
+  {
+    "match": "russell st",
+    "lat": 44.66323,
+    "lng": -63.59468,
+    "district": "District 8",
+    "n": 24
+  },
+  {
+    "match": "forest hills pky",
+    "lat": 44.68396,
+    "lng": -63.48977,
+    "district": "District 4",
+    "n": 24
+  },
+  {
+    "match": "granville st",
+    "lat": 44.64724,
+    "lng": -63.57344,
+    "district": "District 7",
+    "n": 24
+  },
+  {
+    "match": "rocky lake dr",
+    "lat": 44.73788,
+    "lng": -63.64598,
+    "district": "District 16",
+    "n": 24
+  },
+  {
+    "match": "argyle st",
+    "lat": 44.64773,
+    "lng": -63.57522,
+    "district": "District 7",
+    "n": 24
+  },
+  {
+    "match": "ogilvie st",
+    "lat": 44.62904,
+    "lng": -63.5714,
+    "district": "District 7",
+    "n": 24
+  },
+  {
+    "match": "pleasant st",
+    "lat": 44.64973,
+    "lng": -63.54624,
+    "district": "District 3",
+    "n": 24
+  },
+  {
+    "match": "howe st",
+    "lat": 44.67512,
+    "lng": -63.58729,
+    "district": "District 5",
+    "n": 24
+  },
+  {
+    "match": "birmingham st",
+    "lat": 44.6413,
+    "lng": -63.5762,
+    "district": "District 7",
+    "n": 23
+  },
+  {
+    "match": "st albans st",
+    "lat": 44.65572,
+    "lng": -63.59859,
+    "district": "District 8",
+    "n": 23
+  },
+  {
+    "match": "mount hope ave",
+    "lat": 44.65619,
+    "lng": -63.5439,
+    "district": "District 3",
+    "n": 23
+  },
+  {
+    "match": "jubilee rd",
+    "lat": 44.64149,
+    "lng": -63.59676,
+    "district": "District 7",
+    "n": 23
+  },
+  {
+    "match": "dutch village rd",
+    "lat": 44.65735,
+    "lng": -63.63182,
+    "district": "District 10",
+    "n": 23
+  },
+  {
+    "match": "main ave",
+    "lat": 44.65531,
+    "lng": -63.64456,
+    "district": "District 10",
+    "n": 23
+  },
+  {
+    "match": "gladstone st",
+    "lat": 44.65461,
+    "lng": -63.60022,
+    "district": "District 8",
+    "n": 23
+  },
+  {
+    "match": "south st",
+    "lat": 44.63745,
+    "lng": -63.582,
+    "district": "District 7",
+    "n": 23
+  },
+  {
+    "match": "summer st",
+    "lat": 44.64297,
+    "lng": -63.5844,
+    "district": "District 7",
+    "n": 23
+  },
+  {
+    "match": "inglis st",
+    "lat": 44.63389,
+    "lng": -63.578,
+    "district": "District 7",
+    "n": 23
+  },
+  {
+    "match": "caledonia rd",
+    "lat": 44.69074,
+    "lng": -63.53191,
+    "district": "District 6",
+    "n": 23
+  },
+  {
+    "match": "bell rd",
+    "lat": 44.64646,
+    "lng": -63.58714,
+    "district": "District 7",
+    "n": 22
+  },
+  {
+    "match": "prince albert rd",
+    "lat": 44.67528,
+    "lng": -63.55971,
+    "district": "District 5",
+    "n": 22
+  },
+  {
+    "match": "creighton st",
+    "lat": 44.6516,
+    "lng": -63.58454,
+    "district": "District 8",
+    "n": 22
+  },
+  {
+    "match": "wyse rd",
+    "lat": 44.67169,
+    "lng": -63.57869,
+    "district": "District 5",
+    "n": 22
+  },
+  {
+    "match": "armstrong crt",
+    "lat": 44.68534,
+    "lng": -63.67234,
+    "district": "District 10",
+    "n": 22
+  },
+  {
+    "match": "chain lake dr",
+    "lat": 44.64845,
+    "lng": -63.67488,
+    "district": "District 12",
+    "n": 22
+  },
+  {
+    "match": "seymour st",
+    "lat": 44.63879,
+    "lng": -63.58937,
+    "district": "District 7",
+    "n": 21
+  },
+  {
+    "match": "crichton ave",
+    "lat": 44.67542,
+    "lng": -63.56387,
+    "district": "District 5",
+    "n": 21
+  },
+  {
+    "match": "coburg rd",
+    "lat": 44.63906,
+    "lng": -63.59172,
+    "district": "District 7",
+    "n": 21
+  },
+  {
+    "match": "shore rd",
+    "lat": 44.60495,
+    "lng": -63.556,
+    "district": "District 3",
+    "n": 21
+  },
+  {
+    "match": "cobequid rd",
+    "lat": 44.76193,
+    "lng": -63.65201,
+    "district": "District 15",
+    "n": 21
+  },
+  {
+    "match": "lancaster dr",
+    "lat": 44.6872,
+    "lng": -63.5721,
+    "district": "District 5",
+    "n": 21
+  },
+  {
+    "match": "fall river rd",
+    "lat": 44.81372,
+    "lng": -63.61584,
+    "district": "District 1",
+    "n": 21
+  },
+  {
+    "match": "crown dr",
+    "lat": 44.6386,
+    "lng": -63.63044,
+    "district": "District 9",
+    "n": 21
+  },
+  {
+    "match": "dresden row",
+    "lat": 44.641,
+    "lng": -63.57713,
+    "district": "District 7",
+    "n": 19
+  },
+  {
+    "match": "willow st",
+    "lat": 44.65118,
+    "lng": -63.5981,
+    "district": "District 9",
+    "n": 19
+  },
+  {
+    "match": "point pleasant dr",
+    "lat": 44.62687,
+    "lng": -63.56737,
+    "district": "District 7",
+    "n": 19
+  },
+  {
+    "match": "tower rd",
+    "lat": 44.63528,
+    "lng": -63.57805,
+    "district": "District 7",
+    "n": 19
+  },
+  {
+    "match": "innovation dr",
+    "lat": 44.72281,
+    "lng": -63.69913,
+    "district": "District 16",
+    "n": 19
+  },
+  {
+    "match": "starboard dr",
+    "lat": 44.6966,
+    "lng": -63.68257,
+    "district": "District 16",
+    "n": 19
+  },
+  {
+    "match": "gary martin dr",
+    "lat": 44.72306,
+    "lng": -63.70506,
+    "district": "District 16",
+    "n": 19
+  },
+  {
+    "match": "woodhaven cl",
+    "lat": 44.66571,
+    "lng": -63.50588,
+    "district": "District 3",
+    "n": 19
+  },
+  {
+    "match": "wellington st",
+    "lat": 44.63567,
+    "lng": -63.57988,
+    "district": "District 7",
+    "n": 18
+  },
+  {
+    "match": "walter havill dr",
+    "lat": 44.63326,
+    "lng": -63.6324,
+    "district": "District 9",
+    "n": 18
+  },
+  {
+    "match": "mumford rd",
+    "lat": 44.64885,
+    "lng": -63.61986,
+    "district": "District 9",
+    "n": 18
+  },
+  {
+    "match": "baker dr",
+    "lat": 44.66563,
+    "lng": -63.53071,
+    "district": "District 3",
+    "n": 18
+  },
+  {
+    "match": "highfield park dr",
+    "lat": 44.68777,
+    "lng": -63.58882,
+    "district": "District 5",
+    "n": 18
+  },
+  {
+    "match": "broad st",
+    "lat": 44.71424,
+    "lng": -63.70381,
+    "district": "District 16",
+    "n": 18
+  },
+  {
+    "match": "regency park dr",
+    "lat": 44.65614,
+    "lng": -63.66719,
+    "district": "District 12",
+    "n": 17
+  },
+  {
+    "match": "glendale dr",
+    "lat": 44.77186,
+    "lng": -63.67366,
+    "district": "District 15",
+    "n": 17
+  },
+  {
+    "match": "chadwick st",
+    "lat": 44.65913,
+    "lng": -63.54801,
+    "district": "District 3",
+    "n": 17
+  },
+  {
+    "match": "dublin st",
+    "lat": 44.65274,
+    "lng": -63.60412,
+    "district": "District 9",
+    "n": 17
+  },
+  {
+    "match": "duffus st",
+    "lat": 44.66771,
+    "lng": -63.60585,
+    "district": "District 8",
+    "n": 17
+  },
+  {
+    "match": "parkhill rd",
+    "lat": 44.62447,
+    "lng": -63.60088,
+    "district": "District 11",
+    "n": 17
+  },
+  {
+    "match": "maynard st",
+    "lat": 44.65289,
+    "lng": -63.58749,
+    "district": "District 8",
+    "n": 17
+  },
+  {
+    "match": "astral dr",
+    "lat": 44.6535,
+    "lng": -63.4778,
+    "district": "District 4",
+    "n": 17
+  },
+  {
+    "match": "cork st",
+    "lat": 44.6536,
+    "lng": -63.60963,
+    "district": "District 9",
+    "n": 16
+  },
+  {
+    "match": "williams lake rd",
+    "lat": 44.62055,
+    "lng": -63.60305,
+    "district": "District 11",
+    "n": 16
+  },
+  {
+    "match": "upper water st",
+    "lat": 44.65126,
+    "lng": -63.57381,
+    "district": "District 7",
+    "n": 16
+  },
+  {
+    "match": "prospect rd",
+    "lat": 44.56683,
+    "lng": -63.72914,
+    "district": "District 13",
+    "n": 16
+  },
+  {
+    "match": "basinview dr",
+    "lat": 44.71756,
+    "lng": -63.67366,
+    "district": "District 16",
+    "n": 16
+  },
+  {
+    "match": "portland hills dr",
+    "lat": 44.66529,
+    "lng": -63.50738,
+    "district": "District 3",
+    "n": 16
+  },
+  {
+    "match": "bissett rd",
+    "lat": 44.66177,
+    "lng": -63.46375,
+    "district": "District 4",
+    "n": 16
+  },
+  {
+    "match": "allan st",
+    "lat": 44.64792,
+    "lng": -63.5968,
+    "district": "District 9",
+    "n": 16
+  },
+  {
+    "match": "sussex st",
+    "lat": 44.60933,
+    "lng": -63.6184,
+    "district": "District 11",
+    "n": 16
+  },
+  {
+    "match": "morris st",
+    "lat": 44.64053,
+    "lng": -63.57526,
+    "district": "District 7",
+    "n": 16
+  },
+  {
+    "match": "brook st",
+    "lat": 44.64552,
+    "lng": -63.6311,
+    "district": "District 9",
+    "n": 16
+  },
+  {
+    "match": "pioneer ave",
+    "lat": 44.67622,
+    "lng": -63.65,
+    "district": "District 10",
+    "n": 16
+  },
+  {
+    "match": "osborne st",
+    "lat": 44.63156,
+    "lng": -63.631,
+    "district": "District 11",
+    "n": 16
+  },
+  {
+    "match": "dingle rd",
+    "lat": 44.63015,
+    "lng": -63.59988,
+    "district": "District 11",
+    "n": 16
+  },
+  {
+    "match": "oceanview dr",
+    "lat": 44.70695,
+    "lng": -63.68257,
+    "district": "District 16",
+    "n": 15
+  },
+  {
+    "match": "lady hammond rd",
+    "lat": 44.66486,
+    "lng": -63.61292,
+    "district": "District 8",
+    "n": 15
+  },
+  {
+    "match": "dartmouth rd",
+    "lat": 44.72937,
+    "lng": -63.65558,
+    "district": "District 16",
+    "n": 15
+  },
+  {
+    "match": "nora bernard st",
+    "lat": 44.65185,
+    "lng": -63.58544,
+    "district": "District 8",
+    "n": 15
+  },
+  {
+    "match": "susie lake cres",
+    "lat": 44.6463,
+    "lng": -63.67882,
+    "district": "District 12",
+    "n": 15
+  },
+  {
+    "match": "spencer ave",
+    "lat": 44.6166,
+    "lng": -63.62006,
+    "district": "District 11",
+    "n": 15
+  },
+  {
+    "match": "woodlawn rd",
+    "lat": 44.67628,
+    "lng": -63.5292,
+    "district": "District 6",
+    "n": 15
+  },
+  {
+    "match": "mount edward rd",
+    "lat": 44.68325,
+    "lng": -63.51839,
+    "district": "District 6",
+    "n": 15
+  },
+  {
+    "match": "colby dr",
+    "lat": 44.66558,
+    "lng": -63.4908,
+    "district": "District 4",
+    "n": 15
+  },
+  {
+    "match": "tobin st",
+    "lat": 44.63904,
+    "lng": -63.57096,
+    "district": "District 7",
+    "n": 14
+  },
+  {
+    "match": "isleville st",
+    "lat": 44.66058,
+    "lng": -63.59802,
+    "district": "District 8",
+    "n": 14
+  },
+  {
+    "match": "trollope st",
+    "lat": 44.64802,
+    "lng": -63.58499,
+    "district": "District 7",
+    "n": 14
+  },
+  {
+    "match": "higgins ave",
+    "lat": 44.6385,
+    "lng": -63.6784,
+    "district": "District 12",
+    "n": 14
+  },
+  {
+    "match": "kings wharf pl",
+    "lat": 44.66344,
+    "lng": -63.56278,
+    "district": "District 5",
+    "n": 14
+  },
+  {
+    "match": "charles st",
+    "lat": 44.65211,
+    "lng": -63.59591,
+    "district": "District 8",
+    "n": 14
+  },
+  {
+    "match": "lockview rd",
+    "lat": 44.82347,
+    "lng": -63.61603,
+    "district": "District 1",
+    "n": 14
+  },
+  {
+    "match": "gorsebrook park",
+    "lat": 44.6346,
+    "lng": -63.58234,
+    "district": "District 7",
+    "n": 14
+  },
+  {
+    "match": "old sackville rd",
+    "lat": 44.7661,
+    "lng": -63.69139,
+    "district": "District 15",
+    "n": 14
+  },
+  {
+    "match": "first lake dr",
+    "lat": 44.7753,
+    "lng": -63.6624,
+    "district": "District 15",
+    "n": 14
+  },
+  {
+    "match": "grafton st",
+    "lat": 44.64465,
+    "lng": -63.5744,
+    "district": "District 7",
+    "n": 14
+  },
+  {
+    "match": "seaforth st",
+    "lat": 44.65001,
+    "lng": -63.60272,
+    "district": "District 9",
+    "n": 14
+  },
+  {
+    "match": "strath lane",
+    "lat": 44.68874,
+    "lng": -63.53504,
+    "district": "District 6",
+    "n": 14
+  },
+  {
+    "match": "kearney lake rd",
+    "lat": 44.68564,
+    "lng": -63.6785,
+    "district": "District 10",
+    "n": 14
+  },
+  {
+    "match": "university ave",
+    "lat": 44.63847,
+    "lng": -63.5832,
+    "district": "District 7",
+    "n": 14
+  },
+  {
+    "match": "shore dr",
+    "lat": 44.72486,
+    "lng": -63.6672,
+    "district": "District 16",
+    "n": 14
+  },
+  {
+    "match": "joffre st",
+    "lat": 44.67035,
+    "lng": -63.5493,
+    "district": "District 5",
+    "n": 13
+  },
+  {
+    "match": "vernon st",
+    "lat": 44.64242,
+    "lng": -63.59109,
+    "district": "District 7",
+    "n": 13
+  },
+  {
+    "match": "connolly st",
+    "lat": 44.65067,
+    "lng": -63.60896,
+    "district": "District 9",
+    "n": 13
+  },
+  {
+    "match": "wentworth dr",
+    "lat": 44.67536,
+    "lng": -63.66098,
+    "district": "District 10",
+    "n": 13
+  },
+  {
+    "match": "beech st",
+    "lat": 44.64514,
+    "lng": -63.60255,
+    "district": "District 9",
+    "n": 13
+  },
+  {
+    "match": "bilby st",
+    "lat": 44.66001,
+    "lng": -63.5961,
+    "district": "District 8",
+    "n": 13
+  },
+  {
+    "match": "west st",
+    "lat": 44.65339,
+    "lng": -63.59004,
+    "district": "District 8",
+    "n": 13
+  },
+  {
+    "match": "frederick ave",
+    "lat": 44.65296,
+    "lng": -63.64176,
+    "district": "District 10",
+    "n": 13
+  },
+  {
+    "match": "atlantic st",
+    "lat": 44.64903,
+    "lng": -63.54937,
+    "district": "District 5",
+    "n": 13
+  },
+  {
+    "match": "armenia dr",
+    "lat": 44.70189,
+    "lng": -63.68922,
+    "district": "District 16",
+    "n": 13
+  },
+  {
+    "match": "albro lake rd",
+    "lat": 44.67871,
+    "lng": -63.58469,
+    "district": "District 5",
+    "n": 13
+  },
+  {
+    "match": "brompton rd",
+    "lat": 44.65017,
+    "lng": -63.53135,
+    "district": "District 3",
+    "n": 13
+  },
+  {
+    "match": "darlington dr",
+    "lat": 44.79179,
+    "lng": -63.71833,
+    "district": "District 14",
+    "n": 13
+  },
+  {
+    "match": "hawthorne st",
+    "lat": 44.67283,
+    "lng": -63.56104,
+    "district": "District 5",
+    "n": 12
+  },
+  {
+    "match": "brookline dr",
+    "lat": 44.70732,
+    "lng": -63.71559,
+    "district": "District 16",
+    "n": 12
+  },
+  {
+    "match": "bluewater rd",
+    "lat": 44.71176,
+    "lng": -63.71763,
+    "district": "District 14",
+    "n": 12
+  },
+  {
+    "match": "macara st",
+    "lat": 44.65952,
+    "lng": -63.5987,
+    "district": "District 8",
+    "n": 12
+  },
+  {
+    "match": "george st",
+    "lat": 44.64891,
+    "lng": -63.57313,
+    "district": "District 7",
+    "n": 12
+  },
+  {
+    "match": "mccully st",
+    "lat": 44.65554,
+    "lng": -63.59533,
+    "district": "District 8",
+    "n": 12
+  },
+  {
+    "match": "westerwald st",
+    "lat": 44.65287,
+    "lng": -63.63156,
+    "district": "District 10",
+    "n": 12
+  },
+  {
+    "match": "vimy ave",
+    "lat": 44.66268,
+    "lng": -63.63309,
+    "district": "District 10",
+    "n": 12
+  },
+  {
+    "match": "transom dr",
+    "lat": 44.69348,
+    "lng": -63.68113,
+    "district": "District 16",
+    "n": 12
+  },
+  {
+    "match": "micmac blvd",
+    "lat": 44.68567,
+    "lng": -63.56336,
+    "district": "District 5",
+    "n": 12
+  },
+  {
+    "match": "willett st",
+    "lat": 44.65736,
+    "lng": -63.65289,
+    "district": "District 10",
+    "n": 12
+  },
+  {
+    "match": "radcliffe dr",
+    "lat": 44.66573,
+    "lng": -63.66331,
+    "district": "District 12",
+    "n": 12
+  },
+  {
+    "match": "ochterloney st",
+    "lat": 44.66768,
+    "lng": -63.56689,
+    "district": "District 5",
+    "n": 12
+  },
+  {
+    "match": "novalea dr",
+    "lat": 44.66943,
+    "lng": -63.60932,
+    "district": "District 8",
+    "n": 12
+  },
+  {
+    "match": "church st",
+    "lat": 44.64078,
+    "lng": -63.5733,
+    "district": "District 7",
+    "n": 11
+  },
+  {
+    "match": "charles rd",
+    "lat": 44.65628,
+    "lng": -63.74817,
+    "district": "District 12",
+    "n": 11
+  },
+  {
+    "match": "edward st",
+    "lat": 44.64167,
+    "lng": -63.5867,
+    "district": "District 7",
+    "n": 11
+  },
+  {
+    "match": "drysdale rd",
+    "lat": 44.60908,
+    "lng": -63.6084,
+    "district": "District 11",
+    "n": 11
+  },
+  {
+    "match": "alabaster way",
+    "lat": 44.61012,
+    "lng": -63.60412,
+    "district": "District 11",
+    "n": 11
+  },
+  {
+    "match": "brookshire crt",
+    "lat": 44.72311,
+    "lng": -63.6873,
+    "district": "District 16",
+    "n": 11
+  },
+  {
+    "match": "lucasville rd",
+    "lat": 44.75352,
+    "lng": -63.73704,
+    "district": "District 14",
+    "n": 11
+  },
+  {
+    "match": "langbrae dr",
+    "lat": 44.66904,
+    "lng": -63.66753,
+    "district": "District 12",
+    "n": 11
+  },
+  {
+    "match": "point pleasant park",
+    "lat": 44.62297,
+    "lng": -63.56842,
+    "district": "District 7",
+    "n": 11
+  },
+  {
+    "match": "deal st",
+    "lat": 44.65828,
+    "lng": -63.63076,
+    "district": "District 10",
+    "n": 11
+  },
+  {
+    "match": "leaman dr",
+    "lat": 44.68686,
+    "lng": -63.58033,
+    "district": "District 5",
+    "n": 11
+  },
+  {
+    "match": "avebury crt",
+    "lat": 44.78978,
+    "lng": -63.71664,
+    "district": "District 14",
+    "n": 11
+  },
+  {
+    "match": "lindsay crt",
+    "lat": 44.77137,
+    "lng": -63.698,
+    "district": "District 15",
+    "n": 11
+  },
+  {
+    "match": "preston st",
+    "lat": 44.64494,
+    "lng": -63.59787,
+    "district": "District 9",
+    "n": 11
+  },
+  {
+    "match": "clyde st",
+    "lat": 44.64175,
+    "lng": -63.57709,
+    "district": "District 7",
+    "n": 10
+  },
+  {
+    "match": "henry st",
+    "lat": 44.64181,
+    "lng": -63.59023,
+    "district": "District 7",
+    "n": 10
+  },
+  {
+    "match": "memorial dr",
+    "lat": 44.66644,
+    "lng": -63.61802,
+    "district": "District 8",
+    "n": 10
+  },
+  {
+    "match": "middle st",
+    "lat": 44.67705,
+    "lng": -63.5923,
+    "district": "District 5",
+    "n": 10
+  },
+  {
+    "match": "bauer st",
+    "lat": 44.65053,
+    "lng": -63.58551,
+    "district": "District 8",
+    "n": 10
+  },
+  {
+    "match": "duke st",
+    "lat": 44.64925,
+    "lng": -63.57614,
+    "district": "District 7",
+    "n": 10
+  },
+  {
+    "match": "green st",
+    "lat": 44.63779,
+    "lng": -63.57071,
+    "district": "District 7",
+    "n": 10
+  },
+  {
+    "match": "rainnie dr",
+    "lat": 44.64952,
+    "lng": -63.58357,
+    "district": "District 7",
+    "n": 10
+  },
+  {
+    "match": "convoy ave",
+    "lat": 44.65592,
+    "lng": -63.64026,
+    "district": "District 10",
+    "n": 10
+  },
+  {
+    "match": "lawrencetown rd",
+    "lat": 44.68431,
+    "lng": -63.42339,
+    "district": "District 2",
+    "n": 10
+  },
+  {
+    "match": "braeside lane",
+    "lat": 44.66201,
+    "lng": -63.63984,
+    "district": "District 10",
+    "n": 10
+  },
+  {
+    "match": "pinecrest dr",
+    "lat": 44.68566,
+    "lng": -63.58589,
+    "district": "District 5",
+    "n": 10
+  },
+  {
+    "match": "james st",
+    "lat": 44.65822,
+    "lng": -63.59066,
+    "district": "District 8",
+    "n": 10
+  },
+  {
+    "match": "white hills run",
+    "lat": 44.7674,
+    "lng": -63.781,
+    "district": "District 14",
+    "n": 10
+  },
+  {
+    "match": "bishop st",
+    "lat": 44.64333,
+    "lng": -63.57065,
+    "district": "District 7",
+    "n": 10
+  },
+  {
+    "match": "fairfield rd",
+    "lat": 44.63759,
+    "lng": -63.60451,
+    "district": "District 7",
+    "n": 10
+  },
+  {
+    "match": "renfrew st",
+    "lat": 44.65807,
+    "lng": -63.54763,
+    "district": "District 3",
+    "n": 10
+  },
+  {
+    "match": "tamarack dr",
+    "lat": 44.62954,
+    "lng": -63.6285,
+    "district": "District 11",
+    "n": 10
+  },
+  {
+    "match": "ridge valley rd",
+    "lat": 44.6293,
+    "lng": -63.62137,
+    "district": "District 11",
+    "n": 10
+  },
+  {
+    "match": "swanton dr",
+    "lat": 44.67266,
+    "lng": -63.50579,
+    "district": "District 6",
+    "n": 10
+  },
+  {
+    "match": "locks rd",
+    "lat": 44.70194,
+    "lng": -63.55358,
+    "district": "District 6",
+    "n": 10
+  },
+  {
+    "match": "prince st",
+    "lat": 44.66402,
+    "lng": -63.56948,
+    "district": "District 5",
+    "n": 10
+  },
+  {
+    "match": "tilbury ave",
+    "lat": 44.70948,
+    "lng": -63.69865,
+    "district": "District 16",
+    "n": 10
+  },
+  {
+    "match": "leeds st",
+    "lat": 44.66714,
+    "lng": -63.61565,
+    "district": "District 8",
+    "n": 9
+  },
+  {
+    "match": "lakeview rd",
+    "lat": 44.76666,
+    "lng": -63.62738,
+    "district": "District 1",
+    "n": 9
+  },
+  {
+    "match": "hobsons lake dr",
+    "lat": 44.64187,
+    "lng": -63.67755,
+    "district": "District 12",
+    "n": 9
+  },
+  {
+    "match": "london st",
+    "lat": 44.65275,
+    "lng": -63.60761,
+    "district": "District 9",
+    "n": 9
+  },
+  {
+    "match": "dorothea dr",
+    "lat": 44.67689,
+    "lng": -63.50649,
+    "district": "District 6",
+    "n": 9
+  },
+  {
+    "match": "green village lane",
+    "lat": 44.66624,
+    "lng": -63.53571,
+    "district": "District 3",
+    "n": 9
+  },
+  {
+    "match": "nottingham st",
+    "lat": 44.73428,
+    "lng": -63.66164,
+    "district": "District 16",
+    "n": 9
+  },
+  {
+    "match": "honeygold dr",
+    "lat": 44.60091,
+    "lng": -63.6043,
+    "district": "District 11",
+    "n": 9
+  },
+  {
+    "match": "richmond st",
+    "lat": 44.67509,
+    "lng": -63.58296,
+    "district": "District 5",
+    "n": 9
+  },
+  {
+    "match": "albert st",
+    "lat": 44.6675,
+    "lng": -63.56021,
+    "district": "District 5",
+    "n": 9
+  },
+  {
+    "match": "shaunslieve dr",
+    "lat": 44.6955,
+    "lng": -63.66144,
+    "district": "District 16",
+    "n": 9
+  },
+  {
+    "match": "southgate dr",
+    "lat": 44.70669,
+    "lng": -63.67831,
+    "district": "District 16",
+    "n": 9
+  },
+  {
+    "match": "rockingstone rd",
+    "lat": 44.60559,
+    "lng": -63.6193,
+    "district": "District 11",
+    "n": 9
+  },
+  {
+    "match": "millwood dr",
+    "lat": 44.791,
+    "lng": -63.70269,
+    "district": "District 14",
+    "n": 9
+  },
+  {
+    "match": "true north cres",
+    "lat": 44.69004,
+    "lng": -63.58328,
+    "district": "District 5",
+    "n": 9
+  },
+  {
+    "match": "schnare st",
+    "lat": 44.61733,
+    "lng": -63.62042,
+    "district": "District 11",
+    "n": 9
+  },
+  {
+    "match": "glenwood ave",
+    "lat": 44.67758,
+    "lng": -63.54935,
+    "district": "District 6",
+    "n": 9
+  },
+  {
+    "match": "wright ave",
+    "lat": 44.70723,
+    "lng": -63.57729,
+    "district": "District 6",
+    "n": 9
+  },
+  {
+    "match": "raymoor dr",
+    "lat": 44.68643,
+    "lng": -63.53469,
+    "district": "District 6",
+    "n": 9
+  },
+  {
+    "match": "westwood blvd",
+    "lat": 44.70641,
+    "lng": -63.86007,
+    "district": "District 13",
+    "n": 9
+  },
+  {
+    "match": "melwood ave",
+    "lat": 44.63725,
+    "lng": -63.62071,
+    "district": "District 9",
+    "n": 9
+  },
+  {
+    "match": "brigadier crt",
+    "lat": 44.69872,
+    "lng": -63.66843,
+    "district": "District 16",
+    "n": 9
+  },
+  {
+    "match": "amalamek way",
+    "lat": 44.65334,
+    "lng": -63.58054,
+    "district": "District 8",
+    "n": 9
+  },
+  {
+    "match": "wentworth st",
+    "lat": 44.66631,
+    "lng": -63.56649,
+    "district": "District 5",
+    "n": 9
+  },
+  {
+    "match": "kennedy dr",
+    "lat": 44.69107,
+    "lng": -63.53135,
+    "district": "District 6",
+    "n": 9
+  },
+  {
+    "match": "chapman st",
+    "lat": 44.67714,
+    "lng": -63.58175,
+    "district": "District 5",
+    "n": 9
+  },
+  {
+    "match": "thomas raddall dr",
+    "lat": 44.65817,
+    "lng": -63.66435,
+    "district": "District 12",
+    "n": 8
+  },
+  {
+    "match": "maple st",
+    "lat": 44.67082,
+    "lng": -63.56536,
+    "district": "District 5",
+    "n": 8
+  },
+  {
+    "match": "montgomery crt",
+    "lat": 44.67179,
+    "lng": -63.66927,
+    "district": "District 12",
+    "n": 8
+  },
+  {
+    "match": "north park st",
+    "lat": 44.65108,
+    "lng": -63.58662,
+    "district": "District 8",
+    "n": 8
+  },
+  {
+    "match": "walnut st",
+    "lat": 44.63935,
+    "lng": -63.59235,
+    "district": "District 7",
+    "n": 8
+  },
+  {
+    "match": "flamingo dr",
+    "lat": 44.67063,
+    "lng": -63.65467,
+    "district": "District 10",
+    "n": 8
+  },
+  {
+    "match": "lemarchant st",
+    "lat": 44.63807,
+    "lng": -63.5906,
+    "district": "District 7",
+    "n": 8
+  },
+  {
+    "match": "faulkner st",
+    "lat": 44.66857,
+    "lng": -63.58108,
+    "district": "District 5",
+    "n": 8
+  },
+  {
+    "match": "ross rd",
+    "lat": 44.69459,
+    "lng": -63.45678,
+    "district": "District 4",
+    "n": 8
+  },
+  {
+    "match": "kingswood dr",
+    "lat": 44.71373,
+    "lng": -63.74152,
+    "district": "District 14",
+    "n": 8
+  },
+  {
+    "match": "armdale rot",
+    "lat": 44.64158,
+    "lng": -63.61999,
+    "district": "District 9",
+    "n": 8
+  },
+  {
+    "match": "dartmouth common",
+    "lat": 44.66883,
+    "lng": -63.57244,
+    "district": "District 5",
+    "n": 8
+  },
+  {
+    "match": "montebello dr",
+    "lat": 44.69864,
+    "lng": -63.54115,
+    "district": "District 6",
+    "n": 8
+  },
+  {
+    "match": "holland ave",
+    "lat": 44.72129,
+    "lng": -63.67729,
+    "district": "District 16",
+    "n": 8
+  },
+  {
+    "match": "kelly st",
+    "lat": 44.63332,
+    "lng": -63.62953,
+    "district": "District 9",
+    "n": 8
+  },
+  {
+    "match": "john st",
+    "lat": 44.65307,
+    "lng": -63.59088,
+    "district": "District 8",
+    "n": 8
+  },
+  {
+    "match": "summit st",
+    "lat": 44.6509,
+    "lng": -63.60293,
+    "district": "District 9",
+    "n": 8
+  },
+  {
+    "match": "northwood terr",
+    "lat": 44.65733,
+    "lng": -63.59312,
+    "district": "District 8",
+    "n": 8
+  },
+  {
+    "match": "flying cloud dr",
+    "lat": 44.68131,
+    "lng": -63.49373,
+    "district": "District 4",
+    "n": 8
+  },
+  {
+    "match": "scotia square",
+    "lat": 44.64965,
+    "lng": -63.57576,
+    "district": "District 7",
+    "n": 8
+  },
+  {
+    "match": "adelaide ave",
+    "lat": 44.65372,
+    "lng": -63.64351,
+    "district": "District 10",
+    "n": 8
+  },
+  {
+    "match": "lakelands blvd",
+    "lat": 44.63621,
+    "lng": -63.66911,
+    "district": "District 12",
+    "n": 8
+  },
+  {
+    "match": "kent st",
+    "lat": 44.63827,
+    "lng": -63.5711,
+    "district": "District 7",
+    "n": 8
+  },
+  {
+    "match": "geary st",
+    "lat": 44.66693,
+    "lng": -63.57294,
+    "district": "District 5",
+    "n": 8
+  },
+  {
+    "match": "roberts st",
+    "lat": 44.65421,
+    "lng": -63.59015,
+    "district": "District 8",
+    "n": 8
+  },
+  {
+    "match": "sunnyvale cres",
+    "lat": 44.78533,
+    "lng": -63.695,
+    "district": "District 15",
+    "n": 8
+  },
+  {
+    "match": "symonds st",
+    "lat": 44.67645,
+    "lng": -63.58371,
+    "district": "District 5",
+    "n": 8
+  },
+  {
+    "match": "wood ave",
+    "lat": 44.65753,
+    "lng": -63.58956,
+    "district": "District 8",
+    "n": 8
+  },
+  {
+    "match": "lakeview ave",
+    "lat": 44.81242,
+    "lng": -63.74472,
+    "district": "District 14",
+    "n": 8
+  },
+  {
+    "match": "brenton st",
+    "lat": 44.64197,
+    "lng": -63.57817,
+    "district": "District 7",
+    "n": 8
+  },
+  {
+    "match": "kearney lake beach park",
+    "lat": 44.68728,
+    "lng": -63.68468,
+    "district": "District 10",
+    "n": 8
+  },
+  {
+    "match": "salter st",
+    "lat": 44.64517,
+    "lng": -63.57072,
+    "district": "District 7",
+    "n": 8
+  },
+  {
+    "match": "thornhill dr",
+    "lat": 44.69237,
+    "lng": -63.59027,
+    "district": "District 6",
+    "n": 8
+  },
+  {
+    "match": "jamieson st",
+    "lat": 44.6717,
+    "lng": -63.58373,
+    "district": "District 5",
+    "n": 8
+  },
+  {
+    "match": "braemar dr",
+    "lat": 44.68721,
+    "lng": -63.5466,
+    "district": "District 6",
+    "n": 8
+  },
+  {
+    "match": "garland ave",
+    "lat": 44.70645,
+    "lng": -63.58259,
+    "district": "District 6",
+    "n": 8
+  },
+  {
+    "match": "sunnybrae ave",
+    "lat": 44.64883,
+    "lng": -63.6426,
+    "district": "District 10",
+    "n": 7
+  },
+  {
+    "match": "green rd",
+    "lat": 44.67209,
+    "lng": -63.57869,
+    "district": "District 5",
+    "n": 7
+  },
+  {
+    "match": "sherwood st",
+    "lat": 44.64815,
+    "lng": -63.48172,
+    "district": "District 4",
+    "n": 7
+  },
+  {
+    "match": "buckingham dr",
+    "lat": 44.70064,
+    "lng": -63.84352,
+    "district": "District 13",
+    "n": 7
+  },
+  {
+    "match": "chameau cres",
+    "lat": 44.68093,
+    "lng": -63.49059,
+    "district": "District 4",
+    "n": 7
+  },
+  {
+    "match": "lucknow st",
+    "lat": 44.63599,
+    "lng": -63.57511,
+    "district": "District 7",
+    "n": 7
+  },
+  {
+    "match": "shirley st",
+    "lat": 44.64512,
+    "lng": -63.59333,
+    "district": "District 9",
+    "n": 7
+  },
+  {
+    "match": "birch cove lane",
+    "lat": 44.68119,
+    "lng": -63.6612,
+    "district": "District 10",
+    "n": 7
+  },
+  {
+    "match": "breaktrail dr",
+    "lat": 44.70526,
+    "lng": -63.71689,
+    "district": "District 16",
+    "n": 7
+  },
+  {
+    "match": "liverpool st",
+    "lat": 44.65345,
+    "lng": -63.60789,
+    "district": "District 9",
+    "n": 7
+  },
+  {
+    "match": "annandale st",
+    "lat": 44.64417,
+    "lng": -63.57917,
+    "district": "District 7",
+    "n": 7
+  },
+  {
+    "match": "barkton lane",
+    "lat": 44.66525,
+    "lng": -63.6613,
+    "district": "District 12",
+    "n": 7
+  },
+  {
+    "match": "black st",
+    "lat": 44.65785,
+    "lng": -63.59356,
+    "district": "District 8",
+    "n": 7
+  },
+  {
+    "match": "sterns crt",
+    "lat": 44.71569,
+    "lng": -63.60082,
+    "district": "District 6",
+    "n": 7
+  },
+  {
+    "match": "royal masts way",
+    "lat": 44.71013,
+    "lng": -63.68222,
+    "district": "District 16",
+    "n": 7
+  },
+  {
+    "match": "abbey rd",
+    "lat": 44.62751,
+    "lng": -63.62185,
+    "district": "District 11",
+    "n": 7
+  },
+  {
+    "match": "bolton terr",
+    "lat": 44.6741,
+    "lng": -63.56183,
+    "district": "District 5",
+    "n": 7
+  },
+  {
+    "match": "washmill lake dr",
+    "lat": 44.64792,
+    "lng": -63.66388,
+    "district": "District 12",
+    "n": 7
+  },
+  {
+    "match": "bruce st",
+    "lat": 44.67165,
+    "lng": -63.53132,
+    "district": "District 6",
+    "n": 7
+  },
+  {
+    "match": "hanwell dr",
+    "lat": 44.78806,
+    "lng": -63.72038,
+    "district": "District 14",
+    "n": 7
+  },
+  {
+    "match": "stanley st",
+    "lat": 44.66359,
+    "lng": -63.60659,
+    "district": "District 8",
+    "n": 7
+  },
+  {
+    "match": "jackladder dr",
+    "lat": 44.79647,
+    "lng": -63.70908,
+    "district": "District 14",
+    "n": 7
+  },
+  {
+    "match": "oceanview school rd",
+    "lat": 44.60964,
+    "lng": -63.47493,
+    "district": "District 3",
+    "n": 7
+  },
+  {
+    "match": "penhorn dr",
+    "lat": 44.67538,
+    "lng": -63.5395,
+    "district": "District 6",
+    "n": 7
+  },
+  {
+    "match": "montague rd",
+    "lat": 44.70233,
+    "lng": -63.49761,
+    "district": "District 4",
+    "n": 7
+  },
+  {
+    "match": "valleyfield rd",
+    "lat": 44.67343,
+    "lng": -63.52958,
+    "district": "District 6",
+    "n": 7
+  },
+  {
+    "match": "cherry st",
+    "lat": 44.64468,
+    "lng": -63.59087,
+    "district": "District 9",
+    "n": 7
+  },
+  {
+    "match": "dentith rd",
+    "lat": 44.61301,
+    "lng": -63.62011,
+    "district": "District 11",
+    "n": 7
+  },
+  {
+    "match": "stairs pl",
+    "lat": 44.66393,
+    "lng": -63.60201,
+    "district": "District 8",
+    "n": 7
+  },
+  {
+    "match": "metropolitan ave",
+    "lat": 44.77914,
+    "lng": -63.67388,
+    "district": "District 15",
+    "n": 7
+  },
+  {
+    "match": "circle dr",
+    "lat": 44.62056,
+    "lng": -63.6152,
+    "district": "District 11",
+    "n": 7
+  },
+  {
+    "match": "lucien dr",
+    "lat": 44.6837,
+    "lng": -63.51195,
+    "district": "District 6",
+    "n": 7
+  },
+  {
+    "match": "breeze dr",
+    "lat": 44.70575,
+    "lng": -63.54255,
+    "district": "District 6",
+    "n": 7
+  },
+  {
+    "match": "davison st",
+    "lat": 44.65253,
+    "lng": -63.59167,
+    "district": "District 8",
+    "n": 7
+  },
+  {
+    "match": "noah ave",
+    "lat": 44.65962,
+    "lng": -63.5321,
+    "district": "District 3",
+    "n": 6
+  },
+  {
+    "match": "fenwick st",
+    "lat": 44.63745,
+    "lng": -63.57626,
+    "district": "District 7",
+    "n": 6
+  },
+  {
+    "match": "albemarle st",
+    "lat": 44.64963,
+    "lng": -63.57747,
+    "district": "District 7",
+    "n": 6
+  },
+  {
+    "match": "randolph st",
+    "lat": 44.63078,
+    "lng": -63.61199,
+    "district": "District 11",
+    "n": 6
+  },
+  {
+    "match": "titanium cres",
+    "lat": 44.60458,
+    "lng": -63.59872,
+    "district": "District 11",
+    "n": 6
+  },
+  {
+    "match": "oceanlea dr",
+    "lat": 44.60974,
+    "lng": -63.47868,
+    "district": "District 3",
+    "n": 6
+  },
+  {
+    "match": "brooks dr",
+    "lat": 44.71957,
+    "lng": -63.43396,
+    "district": "District 4",
+    "n": 6
+  },
+  {
+    "match": "farrell st",
+    "lat": 44.67851,
+    "lng": -63.58936,
+    "district": "District 5",
+    "n": 6
+  },
+  {
+    "match": "gaston rd",
+    "lat": 44.66617,
+    "lng": -63.54104,
+    "district": "District 3",
+    "n": 6
+  },
+  {
+    "match": "seapoint rd",
+    "lat": 44.70033,
+    "lng": -63.60852,
+    "district": "District 6",
+    "n": 6
+  },
+  {
+    "match": "gough cl",
+    "lat": 44.63843,
+    "lng": -63.67831,
+    "district": "District 12",
+    "n": 6
+  },
+  {
+    "match": "greenwich dr",
+    "lat": 44.65926,
+    "lng": -63.47768,
+    "district": "District 4",
+    "n": 6
+  },
+  {
+    "match": "cambridge st",
+    "lat": 44.64272,
+    "lng": -63.60109,
+    "district": "District 9",
+    "n": 6
+  },
+  {
+    "match": "kline st",
+    "lat": 44.64734,
+    "lng": -63.6029,
+    "district": "District 9",
+    "n": 6
+  },
+  {
+    "match": "oakdale cres",
+    "lat": 44.67878,
+    "lng": -63.56174,
+    "district": "District 5",
+    "n": 6
+  },
+  {
+    "match": "kerri lea lane",
+    "lat": 44.6137,
+    "lng": -63.47916,
+    "district": "District 3",
+    "n": 6
+  },
+  {
+    "match": "college st",
+    "lat": 44.63976,
+    "lng": -63.58546,
+    "district": "District 7",
+    "n": 6
+  },
+  {
+    "match": "hemlock st",
+    "lat": 44.65131,
+    "lng": -63.62696,
+    "district": "District 9",
+    "n": 6
+  },
+  {
+    "match": "ashdale ave",
+    "lat": 44.65848,
+    "lng": -63.6344,
+    "district": "District 10",
+    "n": 6
+  },
+  {
+    "match": "majestic ave",
+    "lat": 44.80856,
+    "lng": -63.68488,
+    "district": "District 15",
+    "n": 6
+  },
+  {
+    "match": "mitchell st",
+    "lat": 44.67386,
+    "lng": -63.58605,
+    "district": "District 5",
+    "n": 6
+  },
+  {
+    "match": "waterfront dr",
+    "lat": 44.71634,
+    "lng": -63.67128,
+    "district": "District 16",
+    "n": 6
+  },
+  {
+    "match": "simmonds rd",
+    "lat": 44.74541,
+    "lng": -63.46739,
+    "district": "District 4",
+    "n": 6
+  },
+  {
+    "match": "beaconsfield way",
+    "lat": 44.78944,
+    "lng": -63.71609,
+    "district": "District 14",
+    "n": 6
+  },
+  {
+    "match": "sea king dr",
+    "lat": 44.68605,
+    "lng": -63.57649,
+    "district": "District 5",
+    "n": 6
+  },
+  {
+    "match": "ridgestone crt",
+    "lat": 44.63258,
+    "lng": -63.6313,
+    "district": "District 11",
+    "n": 6
+  },
+  {
+    "match": "pearlgarden cl",
+    "lat": 44.71474,
+    "lng": -63.54449,
+    "district": "District 6",
+    "n": 6
+  },
+  {
+    "match": "sagewood lane",
+    "lat": 44.61863,
+    "lng": -63.6083,
+    "district": "District 11",
+    "n": 6
+  },
+  {
+    "match": "raymond dr",
+    "lat": 44.76996,
+    "lng": -63.68141,
+    "district": "District 15",
+    "n": 6
+  },
+  {
+    "match": "carver st",
+    "lat": 44.67281,
+    "lng": -63.52608,
+    "district": "District 6",
+    "n": 6
+  },
+  {
+    "match": "trinity ave",
+    "lat": 44.68054,
+    "lng": -63.59343,
+    "district": "District 5",
+    "n": 6
+  },
+  {
+    "match": "elm st",
+    "lat": 44.64638,
+    "lng": -63.60441,
+    "district": "District 9",
+    "n": 6
+  },
+  {
+    "match": "highfield park bus terminal",
+    "lat": 44.6844,
+    "lng": -63.58916,
+    "district": "District 5",
+    "n": 6
+  },
+  {
+    "match": "coronation ave",
+    "lat": 44.65467,
+    "lng": -63.63948,
+    "district": "District 10",
+    "n": 6
+  },
+  {
+    "match": "regent dr",
+    "lat": 44.67737,
+    "lng": -63.54701,
+    "district": "District 6",
+    "n": 6
+  },
+  {
+    "match": "central ave",
+    "lat": 44.65095,
+    "lng": -63.63985,
+    "district": "District 10",
+    "n": 6
+  },
+  {
+    "match": "lakewood dr",
+    "lat": 44.55609,
+    "lng": -63.72052,
+    "district": "District 13",
+    "n": 6
+  },
+  {
+    "match": "bedford south school park",
+    "lat": 44.70806,
+    "lng": -63.67877,
+    "district": "District 16",
+    "n": 6
+  },
+  {
+    "match": "colonna pl",
+    "lat": 44.70132,
+    "lng": -63.54093,
+    "district": "District 6",
+    "n": 6
+  },
+  {
+    "match": "stockton rg",
+    "lat": 44.70523,
+    "lng": -63.68301,
+    "district": "District 16",
+    "n": 6
+  },
+  {
+    "match": "sir sandford fleming park",
+    "lat": 44.62877,
+    "lng": -63.60278,
+    "district": "District 11",
+    "n": 6
+  },
+  {
+    "match": "laurier st",
+    "lat": 44.68217,
+    "lng": -63.57475,
+    "district": "District 5",
+    "n": 6
+  },
+  {
+    "match": "mountain rd",
+    "lat": 44.62985,
+    "lng": -63.62504,
+    "district": "District 11",
+    "n": 6
+  },
+  {
+    "match": "stratford way",
+    "lat": 44.6619,
+    "lng": -63.66637,
+    "district": "District 12",
+    "n": 6
+  },
+  {
+    "match": "cumberland dr",
+    "lat": 44.66991,
+    "lng": -63.48933,
+    "district": "District 4",
+    "n": 6
+  },
+  {
+    "match": "albert pl",
+    "lat": 44.6708,
+    "lng": -63.60678,
+    "district": "District 8",
+    "n": 6
+  },
+  {
+    "match": "freshwater trl",
+    "lat": 44.66257,
+    "lng": -63.5277,
+    "district": "District 3",
+    "n": 6
+  },
+  {
+    "match": "circassion dr",
+    "lat": 44.67888,
+    "lng": -63.49458,
+    "district": "District 4",
+    "n": 6
+  },
+  {
+    "match": "melrose ave",
+    "lat": 44.65214,
+    "lng": -63.63228,
+    "district": "District 10",
+    "n": 6
+  },
+  {
+    "match": "rosedale ave",
+    "lat": 44.6544,
+    "lng": -63.63516,
+    "district": "District 10",
+    "n": 6
+  },
+  {
+    "match": "burnside dr",
+    "lat": 44.7032,
+    "lng": -63.58573,
+    "district": "District 6",
+    "n": 6
+  },
+  {
+    "match": "rosedale dr",
+    "lat": 44.67316,
+    "lng": -63.58454,
+    "district": "District 5",
+    "n": 6
+  },
+  {
+    "match": "erskine st",
+    "lat": 44.66968,
+    "lng": -63.56175,
+    "district": "District 5",
+    "n": 5
+  },
+  {
+    "match": "cavalier dr",
+    "lat": 44.77478,
+    "lng": -63.66003,
+    "district": "District 15",
+    "n": 5
+  },
+  {
+    "match": "nine mile dr",
+    "lat": 44.70376,
+    "lng": -63.68798,
+    "district": "District 16",
+    "n": 5
+  },
+  {
+    "match": "st laurent pl",
+    "lat": 44.68594,
+    "lng": -63.66398,
+    "district": "District 10",
+    "n": 5
+  },
+  {
+    "match": "monarch dr",
+    "lat": 44.8112,
+    "lng": -63.68262,
+    "district": "District 15",
+    "n": 5
+  },
+  {
+    "match": "nictaux dr",
+    "lat": 44.78351,
+    "lng": -63.67358,
+    "district": "District 15",
+    "n": 5
+  },
+  {
+    "match": "roslyn rd",
+    "lat": 44.65414,
+    "lng": -63.61281,
+    "district": "District 8",
+    "n": 5
+  },
+  {
+    "match": "bromley rd",
+    "lat": 44.62921,
+    "lng": -63.62116,
+    "district": "District 11",
+    "n": 5
+  },
+  {
+    "match": "capstone cres",
+    "lat": 44.72222,
+    "lng": -63.70412,
+    "district": "District 16",
+    "n": 5
+  },
+  {
+    "match": "hemlock dr",
+    "lat": 44.71761,
+    "lng": -63.86878,
+    "district": "District 13",
+    "n": 5
+  },
+  {
+    "match": "travertine crt",
+    "lat": 44.60612,
+    "lng": -63.59865,
+    "district": "District 11",
+    "n": 5
+  },
+  {
+    "match": "shamrock dr",
+    "lat": 44.67404,
+    "lng": -63.57459,
+    "district": "District 5",
+    "n": 5
+  },
+  {
+    "match": "colindale st",
+    "lat": 44.62855,
+    "lng": -63.61101,
+    "district": "District 11",
+    "n": 5
+  },
+  {
+    "match": "pinehill dr",
+    "lat": 44.77021,
+    "lng": -63.67262,
+    "district": "District 15",
+    "n": 5
+  },
+  {
+    "match": "duncan st",
+    "lat": 44.64928,
+    "lng": -63.59733,
+    "district": "District 9",
+    "n": 5
+  },
+  {
+    "match": "thornvale ave",
+    "lat": 44.63681,
+    "lng": -63.59936,
+    "district": "District 7",
+    "n": 5
+  },
+  {
+    "match": "piers ave",
+    "lat": 44.64455,
+    "lng": -63.63474,
+    "district": "District 9",
+    "n": 5
+  },
+  {
+    "match": "cedar st",
+    "lat": 44.64387,
+    "lng": -63.59082,
+    "district": "District 9",
+    "n": 5
+  },
+  {
+    "match": "bayview rd",
+    "lat": 44.66394,
+    "lng": -63.64568,
+    "district": "District 10",
+    "n": 5
+  },
+  {
+    "match": "lier rg",
+    "lat": 44.60831,
+    "lng": -63.60564,
+    "district": "District 11",
+    "n": 5
+  },
+  {
+    "match": "albert walker dr",
+    "lat": 44.63599,
+    "lng": -63.6414,
+    "district": "District 9",
+    "n": 5
+  },
+  {
+    "match": "joseph young st",
+    "lat": 44.68597,
+    "lng": -63.58794,
+    "district": "District 5",
+    "n": 5
+  },
+  {
+    "match": "stanley pl",
+    "lat": 44.66462,
+    "lng": -63.60273,
+    "district": "District 8",
+    "n": 5
+  },
+  {
+    "match": "romans ave",
+    "lat": 44.6528,
+    "lng": -63.62186,
+    "district": "District 9",
+    "n": 5
+  },
+  {
+    "match": "quinn st",
+    "lat": 44.64244,
+    "lng": -63.60989,
+    "district": "District 9",
+    "n": 5
+  },
+  {
+    "match": "edinburgh st",
+    "lat": 44.6529,
+    "lng": -63.60571,
+    "district": "District 9",
+    "n": 5
+  },
+  {
+    "match": "mineville rd",
+    "lat": 44.69311,
+    "lng": -63.38272,
+    "district": "District 2",
+    "n": 5
+  },
+  {
+    "match": "chambers crt",
+    "lat": 44.59193,
+    "lng": -63.59844,
+    "district": "District 11",
+    "n": 5
+  },
+  {
+    "match": "walcot run",
+    "lat": 44.63942,
+    "lng": -63.6304,
+    "district": "District 9",
+    "n": 5
+  },
+  {
+    "match": "hillcrest st",
+    "lat": 44.65157,
+    "lng": -63.63982,
+    "district": "District 10",
+    "n": 5
+  },
+  {
+    "match": "lincoln crss",
+    "lat": 44.66574,
+    "lng": -63.65593,
+    "district": "District 10",
+    "n": 5
+  },
+  {
+    "match": "ravenscraig dr",
+    "lat": 44.61971,
+    "lng": -63.60948,
+    "district": "District 11",
+    "n": 5
+  },
+  {
+    "match": "hazelhurst st",
+    "lat": 44.66589,
+    "lng": -63.55843,
+    "district": "District 5",
+    "n": 5
+  },
+  {
+    "match": "glebe st",
+    "lat": 44.67253,
+    "lng": -63.60671,
+    "district": "District 8",
+    "n": 5
+  },
+  {
+    "match": "millrun cres",
+    "lat": 44.71367,
+    "lng": -63.68388,
+    "district": "District 16",
+    "n": 5
+  },
+  {
+    "match": "slayter st",
+    "lat": 44.67308,
+    "lng": -63.57115,
+    "district": "District 5",
+    "n": 5
+  },
+  {
+    "match": "pine st",
+    "lat": 44.66994,
+    "lng": -63.56698,
+    "district": "District 5",
+    "n": 5
+  },
+  {
+    "match": "highway 111",
+    "lat": 44.64721,
+    "lng": -63.54376,
+    "district": "District 3",
+    "n": 5
+  },
+  {
+    "match": "acadia st",
+    "lat": 44.66921,
+    "lng": -63.6061,
+    "district": "District 8",
+    "n": 5
+  },
+  {
+    "match": "governors lake dr",
+    "lat": 44.64137,
+    "lng": -63.70426,
+    "district": "District 12",
+    "n": 5
+  },
+  {
+    "match": "spring ave",
+    "lat": 44.67177,
+    "lng": -63.51826,
+    "district": "District 6",
+    "n": 5
+  },
+  {
+    "match": "leiblin dr",
+    "lat": 44.60431,
+    "lng": -63.62608,
+    "district": "District 11",
+    "n": 5
+  },
+  {
+    "match": "wynward ave",
+    "lat": 44.71302,
+    "lng": -63.82926,
+    "district": "District 14",
+    "n": 5
+  },
+  {
+    "match": "russell lake dr",
+    "lat": 44.66598,
+    "lng": -63.52124,
+    "district": "District 3",
+    "n": 5
+  },
+  {
+    "match": "stairs st",
+    "lat": 44.66197,
+    "lng": -63.60494,
+    "district": "District 8",
+    "n": 5
+  },
+  {
+    "match": "bosun run",
+    "lat": 44.69728,
+    "lng": -63.67237,
+    "district": "District 16",
+    "n": 5
+  },
+  {
+    "match": "ralston ave",
+    "lat": 44.64993,
+    "lng": -63.62462,
+    "district": "District 9",
+    "n": 5
+  },
+  {
+    "match": "mumford road bus terminal",
+    "lat": 44.64767,
+    "lng": -63.62015,
+    "district": "District 9",
+    "n": 5
+  },
+  {
+    "match": "shea st",
+    "lat": 44.76642,
+    "lng": -63.66348,
+    "district": "District 15",
+    "n": 5
+  },
+  {
+    "match": "maitland st",
+    "lat": 44.65383,
+    "lng": -63.58485,
+    "district": "District 8",
+    "n": 5
+  },
+  {
+    "match": "crystal dr",
+    "lat": 44.6869,
+    "lng": -63.58311,
+    "district": "District 5",
+    "n": 5
+  },
+  {
+    "match": "parker st",
+    "lat": 44.64827,
+    "lng": -63.59189,
+    "district": "District 8",
+    "n": 5
+  },
+  {
+    "match": "irishtown rd",
+    "lat": 44.66862,
+    "lng": -63.56461,
+    "district": "District 5",
+    "n": 5
+  },
+  {
+    "match": "portland estates blvd",
+    "lat": 44.6699,
+    "lng": -63.51826,
+    "district": "District 3",
+    "n": 5
+  },
+  {
+    "match": "grahams grv",
+    "lat": 44.6811,
+    "lng": -63.55053,
+    "district": "District 5",
+    "n": 5
+  },
+  {
+    "match": "hester st",
+    "lat": 44.67311,
+    "lng": -63.58782,
+    "district": "District 5",
+    "n": 5
+  },
+  {
+    "match": "fairfax dr",
+    "lat": 44.66079,
+    "lng": -63.67273,
+    "district": "District 12",
+    "n": 5
+  },
+  {
+    "match": "guildford ave",
+    "lat": 44.71514,
+    "lng": -63.5764,
+    "district": "District 6",
+    "n": 5
+  },
+  {
+    "match": "castlepark grv",
+    "lat": 44.68058,
+    "lng": -63.67662,
+    "district": "District 12",
+    "n": 5
+  },
+  {
+    "match": "jennings st",
+    "lat": 44.64011,
+    "lng": -63.59597,
+    "district": "District 7",
+    "n": 5
+  },
+  {
+    "match": "talus ave",
+    "lat": 44.7035,
+    "lng": -63.71757,
+    "district": "District 16",
+    "n": 5
+  },
+  {
+    "match": "rutledge st",
+    "lat": 44.72795,
+    "lng": -63.671,
+    "district": "District 16",
+    "n": 5
+  },
+  {
+    "match": "dartmouth bridge transit terminal",
+    "lat": 44.67055,
+    "lng": -63.57453,
+    "district": "District 5",
+    "n": 5
+  },
+  {
+    "match": "kassi lane",
+    "lat": 44.65969,
+    "lng": -63.53319,
+    "district": "District 3",
+    "n": 5
+  },
+  {
+    "match": "keyworth lane",
+    "lat": 44.61227,
+    "lng": -63.60859,
+    "district": "District 11",
+    "n": 5
+  },
+  {
+    "match": "stoneybrook crt",
+    "lat": 44.6628,
+    "lng": -63.63938,
+    "district": "District 10",
+    "n": 5
+  },
+  {
+    "match": "fergusons cove rd",
+    "lat": 44.60164,
+    "lng": -63.55629,
+    "district": "District 11",
+    "n": 5
+  },
+  {
+    "match": "fairbanks st",
+    "lat": 44.66691,
+    "lng": -63.57638,
+    "district": "District 5",
+    "n": 5
+  },
+  {
+    "match": "moirs mill rd",
+    "lat": 44.71391,
+    "lng": -63.67752,
+    "district": "District 16",
+    "n": 5
+  },
+  {
+    "match": "greenpark cl",
+    "lat": 44.65228,
+    "lng": -63.66708,
+    "district": "District 12",
+    "n": 5
+  },
+  {
+    "match": "woodland ave",
+    "lat": 44.68124,
+    "lng": -63.57544,
+    "district": "District 5",
+    "n": 5
+  },
+  {
+    "match": "auburn dr",
+    "lat": 44.68675,
+    "lng": -63.48833,
+    "district": "District 4",
+    "n": 5
+  },
+  {
+    "match": "edward arab ave",
+    "lat": 44.64973,
+    "lng": -63.61609,
+    "district": "District 9",
+    "n": 5
+  },
+  {
+    "match": "collins grv",
+    "lat": 44.67125,
+    "lng": -63.51097,
+    "district": "District 6",
+    "n": 5
+  },
+  {
+    "match": "government wharf rd",
+    "lat": 44.61071,
+    "lng": -63.49507,
+    "district": "District 3",
+    "n": 5
+  },
+  {
+    "match": "prince arthur ave",
+    "lat": 44.66308,
+    "lng": -63.54996,
+    "district": "District 3",
+    "n": 5
+  },
+  {
+    "match": "saskatoon dr",
+    "lat": 44.69013,
+    "lng": -63.69008,
+    "district": "District 10",
+    "n": 5
+  },
+  {
+    "match": "victoria park",
+    "lat": 44.64093,
+    "lng": -63.57953,
+    "district": "District 7",
+    "n": 5
+  },
+  {
+    "match": "marvin st",
+    "lat": 44.65984,
+    "lng": -63.5481,
+    "district": "District 3",
+    "n": 5
+  },
+  {
+    "match": "woodward cres",
+    "lat": 44.66039,
+    "lng": -63.64375,
+    "district": "District 10",
+    "n": 5
+  },
+  {
+    "match": "cutler ave",
+    "lat": 44.71822,
+    "lng": -63.55937,
+    "district": "District 6",
+    "n": 5
+  },
+  {
+    "match": "bloomfield st",
+    "lat": 44.6595,
+    "lng": -63.59476,
+    "district": "District 8",
+    "n": 5
+  },
+  {
+    "match": "la pierre cres",
+    "lat": 44.6823,
+    "lng": -63.50384,
+    "district": "District 6",
+    "n": 5
+  },
+  {
+    "match": "young ave",
+    "lat": 44.62852,
+    "lng": -63.5731,
+    "district": "District 7",
+    "n": 5
+  },
+  {
+    "match": "quindora cres",
+    "lat": 44.6918,
+    "lng": -63.48497,
+    "district": "District 4",
+    "n": 5
+  },
+  {
+    "match": "bristolton ave",
+    "lat": 44.70503,
+    "lng": -63.71001,
+    "district": "District 16",
+    "n": 5
+  },
+  {
+    "match": "lovell lane",
+    "lat": 44.61665,
+    "lng": -63.61674,
+    "district": "District 11",
+    "n": 5
+  },
+  {
+    "match": "coldstream run",
+    "lat": 44.66583,
+    "lng": -63.52968,
+    "district": "District 3",
+    "n": 5
+  },
+  {
+    "match": "rolling hills dr",
+    "lat": 44.76877,
+    "lng": -63.57614,
+    "district": "District 1",
+    "n": 5
+  },
+  {
+    "match": "rosborough loop",
+    "lat": 44.63405,
+    "lng": -63.61901,
+    "district": "District 11",
+    "n": 5
+  },
+  {
+    "match": "cherrywood dr",
+    "lat": 44.66027,
+    "lng": -63.49643,
+    "district": "District 4",
+    "n": 5
+  },
+  {
+    "match": "inspector crt",
+    "lat": 44.61003,
+    "lng": -63.61322,
+    "district": "District 11",
+    "n": 4
+  },
+  {
+    "match": "fourth st",
+    "lat": 44.66545,
+    "lng": -63.57762,
+    "district": "District 6",
+    "n": 4
+  },
+  {
+    "match": "beaufort ave",
+    "lat": 44.63229,
+    "lng": -63.59157,
+    "district": "District 7",
+    "n": 4
+  },
+  {
+    "match": "craigmore dr",
+    "lat": 44.64298,
+    "lng": -63.62471,
+    "district": "District 9",
+    "n": 4
+  },
+  {
+    "match": "vanier way",
+    "lat": 44.70548,
+    "lng": -63.6714,
+    "district": "District 16",
+    "n": 4
+  },
+  {
+    "match": "norman blvd",
+    "lat": 44.74649,
+    "lng": -63.79385,
+    "district": "District 14",
+    "n": 4
+  },
+  {
+    "match": "marketway lane",
+    "lat": 44.639,
+    "lng": -63.71704,
+    "district": "District 12",
+    "n": 4
+  },
+  {
+    "match": "greenwood ave",
+    "lat": 44.65045,
+    "lng": -63.73981,
+    "district": "District 12",
+    "n": 4
+  },
+  {
+    "match": "edgewood ave",
+    "lat": 44.65557,
+    "lng": -63.61392,
+    "district": "District 8",
+    "n": 4
+  },
+  {
+    "match": "eaglewood dr",
+    "lat": 44.72478,
+    "lng": -63.65073,
+    "district": "District 16",
+    "n": 4
+  },
+  {
+    "match": "connolly rd",
+    "lat": 44.77669,
+    "lng": -63.7,
+    "district": "District 14",
+    "n": 4
+  },
+  {
+    "match": "shubie park",
+    "lat": 44.7008,
+    "lng": -63.55679,
+    "district": "District 6",
+    "n": 4
+  },
+  {
+    "match": "union st",
+    "lat": 44.66561,
+    "lng": -63.60015,
+    "district": "District 8",
+    "n": 4
+  },
+  {
+    "match": "valkyrie cres",
+    "lat": 44.68278,
+    "lng": -63.50145,
+    "district": "District 6",
+    "n": 4
+  },
+  {
+    "match": "french village station rd",
+    "lat": 44.69162,
+    "lng": -63.87448,
+    "district": "District 13",
+    "n": 4
+  },
+  {
+    "match": "watt st",
+    "lat": 44.64,
+    "lng": -63.59432,
+    "district": "District 7",
+    "n": 4
+  },
+  {
+    "match": "spinnaker dr",
+    "lat": 44.63717,
+    "lng": -63.6172,
+    "district": "District 9",
+    "n": 4
+  },
+  {
+    "match": "meadowbrook dr",
+    "lat": 44.72722,
+    "lng": -63.67572,
+    "district": "District 16",
+    "n": 4
+  },
+  {
+    "match": "atholea dr",
+    "lat": 44.64346,
+    "lng": -63.4748,
+    "district": "District 4",
+    "n": 4
+  },
+  {
+    "match": "brussels st",
+    "lat": 44.63336,
+    "lng": -63.57261,
+    "district": "District 7",
+    "n": 4
+  },
+  {
+    "match": "lois lane",
+    "lat": 44.61384,
+    "lng": -63.61215,
+    "district": "District 11",
+    "n": 4
+  },
+  {
+    "match": "buddy daye st",
+    "lat": 44.65443,
+    "lng": -63.58752,
+    "district": "District 8",
+    "n": 4
+  },
+  {
+    "match": "southill dr",
+    "lat": 44.6592,
+    "lng": -63.6447,
+    "district": "District 10",
+    "n": 4
+  },
+  {
+    "match": "melrose cres",
+    "lat": 44.61301,
+    "lng": -63.46463,
+    "district": "District 3",
+    "n": 4
+  },
+  {
+    "match": "south bland st",
+    "lat": 44.634,
+    "lng": -63.57195,
+    "district": "District 7",
+    "n": 4
+  },
+  {
+    "match": "southbrook cres",
+    "lat": 44.61914,
+    "lng": -63.46556,
+    "district": "District 3",
+    "n": 4
+  },
+  {
+    "match": "yale st",
+    "lat": 44.64574,
+    "lng": -63.59875,
+    "district": "District 9",
+    "n": 4
+  },
+  {
+    "match": "frederick dr",
+    "lat": 44.63184,
+    "lng": -63.43528,
+    "district": "District 3",
+    "n": 4
+  },
+  {
+    "match": "terrastone rg",
+    "lat": 44.71558,
+    "lng": -63.54181,
+    "district": "District 6",
+    "n": 4
+  },
+  {
+    "match": "lyons ave",
+    "lat": 44.61749,
+    "lng": -63.60892,
+    "district": "District 11",
+    "n": 4
+  },
+  {
+    "match": "halifax ferry terminal",
+    "lat": 44.64977,
+    "lng": -63.5716,
+    "district": "District 7",
+    "n": 4
+  },
+  {
+    "match": "abbott dr",
+    "lat": 44.65188,
+    "lng": -63.62697,
+    "district": "District 9",
+    "n": 4
+  },
+  {
+    "match": "punch bowl dr",
+    "lat": 44.62448,
+    "lng": -63.61883,
+    "district": "District 11",
+    "n": 4
+  },
+  {
+    "match": "camilla crt",
+    "lat": 44.69809,
+    "lng": -63.5382,
+    "district": "District 6",
+    "n": 4
+  },
+  {
+    "match": "cameron st",
+    "lat": 44.66258,
+    "lng": -63.55189,
+    "district": "District 3",
+    "n": 4
+  },
+  {
+    "match": "shearwater flyer park",
+    "lat": 44.62477,
+    "lng": -63.4814,
+    "district": "District 3",
+    "n": 4
+  },
+  {
+    "match": "john brackett dr",
+    "lat": 44.57961,
+    "lng": -63.5534,
+    "district": "District 11",
+    "n": 4
+  },
+  {
+    "match": "welsford st",
+    "lat": 44.6485,
+    "lng": -63.59275,
+    "district": "District 9",
+    "n": 4
+  },
+  {
+    "match": "turnmill dr",
+    "lat": 44.66843,
+    "lng": -63.66542,
+    "district": "District 12",
+    "n": 4
+  },
+  {
+    "match": "oakland rd",
+    "lat": 44.63399,
+    "lng": -63.58644,
+    "district": "District 7",
+    "n": 4
+  },
+  {
+    "match": "cabot st",
+    "lat": 44.66516,
+    "lng": -63.60603,
+    "district": "District 8",
+    "n": 4
+  },
+  {
+    "match": "africville rd",
+    "lat": 44.67222,
+    "lng": -63.62096,
+    "district": "District 8",
+    "n": 4
+  },
+  {
+    "match": "akerley blvd",
+    "lat": 44.71308,
+    "lng": -63.5972,
+    "district": "District 6",
+    "n": 4
+  },
+  {
+    "match": "boland rd",
+    "lat": 44.67349,
+    "lng": -63.57889,
+    "district": "District 5",
+    "n": 4
+  },
+  {
+    "match": "livingstone pl",
+    "lat": 44.6633,
+    "lng": -63.60118,
+    "district": "District 8",
+    "n": 4
+  },
+  {
+    "match": "clearview cres",
+    "lat": 44.68022,
+    "lng": -63.56796,
+    "district": "District 5",
+    "n": 4
+  },
+  {
+    "match": "arklow dr",
+    "lat": 44.67742,
+    "lng": -63.48618,
+    "district": "District 4",
+    "n": 4
+  },
+  {
+    "match": "barnstead lane",
+    "lat": 44.65489,
+    "lng": -63.62298,
+    "district": "District 9",
+    "n": 4
+  },
+  {
+    "match": "highway 224",
+    "lat": 45.04295,
+    "lng": -63.15776,
+    "district": "District 1",
+    "n": 4
+  },
+  {
+    "match": "macdonald ave",
+    "lat": 44.69664,
+    "lng": -63.59236,
+    "district": "District 6",
+    "n": 4
+  },
+  {
+    "match": "peggys cove rd",
+    "lat": 44.52209,
+    "lng": -63.92852,
+    "district": "District 13",
+    "n": 4
+  },
+  {
+    "match": "mccabe lake dr",
+    "lat": 44.78209,
+    "lng": -63.75822,
+    "district": "District 14",
+    "n": 4
+  },
+  {
+    "match": "waterstone run",
+    "lat": 44.76518,
+    "lng": -63.73092,
+    "district": "District 14",
+    "n": 4
+  },
+  {
+    "match": "smiths rd",
+    "lat": 44.72828,
+    "lng": -63.69262,
+    "district": "District 14",
+    "n": 4
+  },
+  {
+    "match": "francklyn st",
+    "lat": 44.62588,
+    "lng": -63.57663,
+    "district": "District 7",
+    "n": 4
+  },
+  {
+    "match": "william borrett terr",
+    "lat": 44.70227,
+    "lng": -63.68619,
+    "district": "District 16",
+    "n": 4
+  },
+  {
+    "match": "damascus rd",
+    "lat": 44.7529,
+    "lng": -63.64344,
+    "district": "District 16",
+    "n": 4
+  },
+  {
+    "match": "churchill dr",
+    "lat": 44.64257,
+    "lng": -63.61587,
+    "district": "District 9",
+    "n": 4
+  },
+  {
+    "match": "kempt rd",
+    "lat": 44.66179,
+    "lng": -63.61217,
+    "district": "District 8",
+    "n": 4
+  },
+  {
+    "match": "cavendish dr",
+    "lat": 44.77558,
+    "lng": -63.66137,
+    "district": "District 15",
+    "n": 4
+  },
+  {
+    "match": "foster ave",
+    "lat": 44.80193,
+    "lng": -63.63584,
+    "district": "District 1",
+    "n": 4
+  },
+  {
+    "match": "compton ave",
+    "lat": 44.64999,
+    "lng": -63.59336,
+    "district": "District 8",
+    "n": 4
+  },
+  {
+    "match": "holly dr",
+    "lat": 44.59004,
+    "lng": -63.5937,
+    "district": "District 11",
+    "n": 4
+  },
+  {
+    "match": "dickey dr",
+    "lat": 44.76529,
+    "lng": -63.66468,
+    "district": "District 15",
+    "n": 4
+  },
+  {
+    "match": "bel ayr ave",
+    "lat": 44.67198,
+    "lng": -63.50418,
+    "district": "District 6",
+    "n": 4
+  },
+  {
+    "match": "doyle park rd",
+    "lat": 44.67702,
+    "lng": -63.81024,
+    "district": "District 13",
+    "n": 4
+  },
+  {
+    "match": "harlington cres",
+    "lat": 44.66011,
+    "lng": -63.65367,
+    "district": "District 10",
+    "n": 4
+  },
+  {
+    "match": "braemount dr",
+    "lat": 44.66434,
+    "lng": -63.65072,
+    "district": "District 10",
+    "n": 4
+  },
+  {
+    "match": "broom rd",
+    "lat": 44.69138,
+    "lng": -63.48274,
+    "district": "District 4",
+    "n": 4
+  },
+  {
+    "match": "salmon river dr",
+    "lat": 44.70353,
+    "lng": -63.45642,
+    "district": "District 4",
+    "n": 4
+  },
+  {
+    "match": "fays lane",
+    "lat": 44.62684,
+    "lng": -63.57544,
+    "district": "District 7",
+    "n": 4
+  },
+  {
+    "match": "conrads rd",
+    "lat": 44.63799,
+    "lng": -64.04749,
+    "district": "District 13",
+    "n": 4
+  },
+  {
+    "match": "elizabeth st",
+    "lat": 44.67267,
+    "lng": -63.52608,
+    "district": "District 6",
+    "n": 4
+  },
+  {
+    "match": "elliot st",
+    "lat": 44.67156,
+    "lng": -63.56112,
+    "district": "District 5",
+    "n": 4
+  },
+  {
+    "match": "mica cres",
+    "lat": 44.60544,
+    "lng": -63.59754,
+    "district": "District 11",
+    "n": 4
+  },
+  {
+    "match": "riverside dr",
+    "lat": 44.77797,
+    "lng": -63.68302,
+    "district": "District 15",
+    "n": 4
+  },
+  {
+    "match": "mcintosh run regional park",
+    "lat": 44.60171,
+    "lng": -63.59369,
+    "district": "District 11",
+    "n": 4
+  },
+  {
+    "match": "eaton ave",
+    "lat": 44.67089,
+    "lng": -63.5619,
+    "district": "District 5",
+    "n": 4
+  },
+  {
+    "match": "churchill crt",
+    "lat": 44.68795,
+    "lng": -63.52717,
+    "district": "District 6",
+    "n": 4
+  },
+  {
+    "match": "stokil dr",
+    "lat": 44.78857,
+    "lng": -63.68893,
+    "district": "District 15",
+    "n": 4
+  },
+  {
+    "match": "diana grace ave",
+    "lat": 44.6615,
+    "lng": -63.51335,
+    "district": "District 3",
+    "n": 4
+  },
+  {
+    "match": "leaman st",
+    "lat": 44.66912,
+    "lng": -63.6099,
+    "district": "District 8",
+    "n": 4
+  },
+  {
+    "match": "mainland common",
+    "lat": 44.65623,
+    "lng": -63.66109,
+    "district": "District 12",
+    "n": 4
+  },
+  {
+    "match": "attwood cres",
+    "lat": 44.669,
+    "lng": -63.48164,
+    "district": "District 4",
+    "n": 4
+  },
+  {
+    "match": "high st",
+    "lat": 44.66749,
+    "lng": -63.61538,
+    "district": "District 8",
+    "n": 4
+  },
+  {
+    "match": "dyke rd",
+    "lat": 44.62531,
+    "lng": -63.44645,
+    "district": "District 3",
+    "n": 4
+  },
+  {
+    "match": "lake eagle dr",
+    "lat": 44.72966,
+    "lng": -63.43647,
+    "district": "District 4",
+    "n": 4
+  },
+  {
+    "match": "metropolitan avenue park",
+    "lat": 44.77972,
+    "lng": -63.67524,
+    "district": "District 15",
+    "n": 4
+  },
+  {
+    "match": "confederation ave",
+    "lat": 44.83019,
+    "lng": -63.63293,
+    "district": "District 1",
+    "n": 4
+  },
+  {
+    "match": "warwick lane",
+    "lat": 44.66409,
+    "lng": -63.66144,
+    "district": "District 12",
+    "n": 4
+  },
+  {
+    "match": "fuller terr",
+    "lat": 44.65786,
+    "lng": -63.59474,
+    "district": "District 8",
+    "n": 4
+  },
+  {
+    "match": "glenmont ave",
+    "lat": 44.70957,
+    "lng": -63.6705,
+    "district": "District 16",
+    "n": 4
+  },
+  {
+    "match": "states lane",
+    "lat": 44.63175,
+    "lng": -63.68243,
+    "district": "District 12",
+    "n": 4
+  },
+  {
+    "match": "bell lake park",
+    "lat": 44.67279,
+    "lng": -63.50934,
+    "district": "District 6",
+    "n": 4
+  },
+  {
+    "match": "taranaki dr",
+    "lat": 44.69257,
+    "lng": -63.49399,
+    "district": "District 4",
+    "n": 4
+  },
+  {
+    "match": "school ave",
+    "lat": 44.6495,
+    "lng": -63.63793,
+    "district": "District 10",
+    "n": 4
+  },
+  {
+    "match": "tupper grv",
+    "lat": 44.64013,
+    "lng": -63.60919,
+    "district": "District 9",
+    "n": 4
+  },
+  {
+    "match": "windgate dr",
+    "lat": 44.789,
+    "lng": -63.66572,
+    "district": "District 1",
+    "n": 4
+  },
+  {
+    "match": "glenforest dr",
+    "lat": 44.6583,
+    "lng": -63.64411,
+    "district": "District 10",
+    "n": 4
+  },
+  {
+    "match": "smith st",
+    "lat": 44.637,
+    "lng": -63.5706,
+    "district": "District 7",
+    "n": 4
+  },
+  {
+    "match": "fort needham memorial park",
+    "lat": 44.66522,
+    "lng": -63.60072,
+    "district": "District 8",
+    "n": 4
+  },
+  {
+    "match": "ashburn ave",
+    "lat": 44.65116,
+    "lng": -63.62847,
+    "district": "District 9",
+    "n": 4
+  },
+  {
+    "match": "hornes rd",
+    "lat": 44.6145,
+    "lng": -63.48562,
+    "district": "District 3",
+    "n": 4
+  },
+  {
+    "match": "limardo dr",
+    "lat": 44.6836,
+    "lng": -63.57552,
+    "district": "District 5",
+    "n": 4
+  },
+  {
+    "match": "puncheon way",
+    "lat": 44.70709,
+    "lng": -63.72417,
+    "district": "District 16",
+    "n": 4
+  },
+  {
+    "match": "holland rd",
+    "lat": 44.84484,
+    "lng": -63.60106,
+    "district": "District 1",
+    "n": 4
+  },
+  {
+    "match": "hollyhock way",
+    "lat": 44.71786,
+    "lng": -63.70221,
+    "district": "District 16",
+    "n": 4
+  },
+  {
+    "match": "feruz cres",
+    "lat": 44.61536,
+    "lng": -63.61808,
+    "district": "District 11",
+    "n": 4
+  },
+  {
+    "match": "brookdale cres",
+    "lat": 44.68332,
+    "lng": -63.55677,
+    "district": "District 5",
+    "n": 4
+  },
+  {
+    "match": "needham st",
+    "lat": 44.66391,
+    "lng": -63.59845,
+    "district": "District 8",
+    "n": 4
+  },
+  {
+    "match": "red fern terr",
+    "lat": 44.67055,
+    "lng": -63.67216,
+    "district": "District 12",
+    "n": 4
+  },
+  {
+    "match": "sophia cres",
+    "lat": 44.6854,
+    "lng": -63.48639,
+    "district": "District 4",
+    "n": 4
+  },
+  {
+    "match": "kidston lake park",
+    "lat": 44.59655,
+    "lng": -63.61878,
+    "district": "District 11",
+    "n": 4
+  },
+  {
+    "match": "windsor dr",
+    "lat": 44.70274,
+    "lng": -63.84108,
+    "district": "District 13",
+    "n": 4
+  },
+  {
+    "match": "tremont plateau park",
+    "lat": 44.67381,
+    "lng": -63.65586,
+    "district": "District 10",
+    "n": 4
+  },
+  {
+    "match": "merrimac dr",
+    "lat": 44.67516,
+    "lng": -63.48938,
+    "district": "District 4",
+    "n": 4
+  },
+  {
+    "match": "oakmount dr",
+    "lat": 44.73911,
+    "lng": -63.65371,
+    "district": "District 16",
+    "n": 4
+  },
+  {
+    "match": "covington way",
+    "lat": 44.65584,
+    "lng": -63.65373,
+    "district": "District 10",
+    "n": 4
+  },
+  {
+    "match": "lake dr",
+    "lat": 44.71864,
+    "lng": -63.68539,
+    "district": "District 16",
+    "n": 4
+  },
+  {
+    "match": "becks way",
+    "lat": 44.66146,
+    "lng": -63.47895,
+    "district": "District 4",
+    "n": 4
+  },
+  {
+    "match": "whitehall cres",
+    "lat": 44.66741,
+    "lng": -63.50681,
+    "district": "District 3",
+    "n": 4
+  },
+  {
+    "match": "lynn rd",
+    "lat": 44.63554,
+    "lng": -63.62467,
+    "district": "District 9",
+    "n": 4
+  },
+  {
+    "match": "admiral harry dewolf park",
+    "lat": 44.71686,
+    "lng": -63.67103,
+    "district": "District 16",
+    "n": 4
+  },
+  {
+    "match": "hamshaw dr",
+    "lat": 44.6872,
+    "lng": -63.68365,
+    "district": "District 10",
+    "n": 4
+  },
+  {
+    "match": "skeena st",
+    "lat": 44.66658,
+    "lng": -63.58478,
+    "district": "District 6",
+    "n": 4
+  },
+  {
+    "match": "nowlan st",
+    "lat": 44.67451,
+    "lng": -63.56119,
+    "district": "District 5",
+    "n": 4
+  },
+  {
+    "match": "primrose st",
+    "lat": 44.6855,
+    "lng": -63.58261,
+    "district": "District 5",
+    "n": 4
+  },
+  {
+    "match": "john stewart dr",
+    "lat": 44.68113,
+    "lng": -63.48269,
+    "district": "District 4",
+    "n": 4
+  },
+  {
+    "match": "hannebury dr",
+    "lat": 44.66763,
+    "lng": -63.49701,
+    "district": "District 4",
+    "n": 4
+  },
+  {
+    "match": "plateau cres",
+    "lat": 44.66109,
+    "lng": -63.64105,
+    "district": "District 10",
+    "n": 4
+  },
+  {
+    "match": "berts dr",
+    "lat": 44.65899,
+    "lng": -63.6372,
+    "district": "District 10",
+    "n": 4
+  },
+  {
+    "match": "countryview dr",
+    "lat": 44.7033,
+    "lng": -63.56546,
+    "district": "District 6",
+    "n": 4
+  },
+  {
+    "match": "cathedral lane",
+    "lat": 44.64172,
+    "lng": -63.58056,
+    "district": "District 7",
+    "n": 4
+  },
+  {
+    "match": "shirley elliott crt",
+    "lat": 44.70395,
+    "lng": -63.7108,
+    "district": "District 16",
+    "n": 4
+  },
+  {
+    "match": "alma cres",
+    "lat": 44.65958,
+    "lng": -63.6315,
+    "district": "District 10",
+    "n": 4
+  },
+  {
+    "match": "windcrest terr",
+    "lat": 44.65312,
+    "lng": -63.60224,
+    "district": "District 9",
+    "n": 4
+  },
+  {
+    "match": "mellor ave",
+    "lat": 44.70818,
+    "lng": -63.57863,
+    "district": "District 6",
+    "n": 4
+  },
+  {
+    "match": "deganis dr",
+    "lat": 44.65929,
+    "lng": -63.48228,
+    "district": "District 4",
+    "n": 4
+  },
+  {
+    "match": "brigadoon ave",
+    "lat": 44.68388,
+    "lng": -63.51865,
+    "district": "District 6",
+    "n": 4
+  },
+  {
+    "match": "flat lake dr",
+    "lat": 44.70588,
+    "lng": -63.85046,
+    "district": "District 13",
+    "n": 4
+  },
+  {
+    "match": "vienna st",
+    "lat": 44.64976,
+    "lng": -63.6059,
+    "district": "District 9",
+    "n": 4
+  },
+  {
+    "match": "karen ave",
+    "lat": 44.8363,
+    "lng": -63.60253,
+    "district": "District 1",
+    "n": 4
+  },
+  {
+    "match": "hirandale cres",
+    "lat": 44.68685,
+    "lng": -63.48268,
+    "district": "District 4",
+    "n": 3
+  },
+  {
+    "match": "st matthias st",
+    "lat": 44.65058,
+    "lng": -63.5975,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "crescent ave",
+    "lat": 44.63748,
+    "lng": -63.63,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "jackson rd",
+    "lat": 44.68437,
+    "lng": -63.58064,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "belle aire terr",
+    "lat": 44.65649,
+    "lng": -63.59383,
+    "district": "District 8",
+    "n": 3
+  },
+  {
+    "match": "donaldson ave",
+    "lat": 44.67839,
+    "lng": -63.66701,
+    "district": "District 12",
+    "n": 3
+  },
+  {
+    "match": "rosehurst cl",
+    "lat": 44.66495,
+    "lng": -63.67307,
+    "district": "District 12",
+    "n": 3
+  },
+  {
+    "match": "sampson dr",
+    "lat": 44.78665,
+    "lng": -63.68396,
+    "district": "District 15",
+    "n": 3
+  },
+  {
+    "match": "springvale ave",
+    "lat": 44.64634,
+    "lng": -63.63187,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "danforth rd",
+    "lat": 44.61141,
+    "lng": -63.60725,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "johnstone ave",
+    "lat": 44.66453,
+    "lng": -63.55149,
+    "district": "District 3",
+    "n": 3
+  },
+  {
+    "match": "mann st",
+    "lat": 44.74836,
+    "lng": -63.63696,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "marlborough ave",
+    "lat": 44.6307,
+    "lng": -63.58325,
+    "district": "District 7",
+    "n": 3
+  },
+  {
+    "match": "crossfield rg",
+    "lat": 44.78545,
+    "lng": -63.71528,
+    "district": "District 14",
+    "n": 3
+  },
+  {
+    "match": "kinsac rd",
+    "lat": 44.84886,
+    "lng": -63.68543,
+    "district": "District 15",
+    "n": 3
+  },
+  {
+    "match": "skokomul st",
+    "lat": 44.66744,
+    "lng": -63.56151,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "cutter dr",
+    "lat": 44.6959,
+    "lng": -63.67208,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "carrie best crt",
+    "lat": 44.67471,
+    "lng": -63.65907,
+    "district": "District 10",
+    "n": 3
+  },
+  {
+    "match": "eisener st",
+    "lat": 44.6534,
+    "lng": -63.73798,
+    "district": "District 12",
+    "n": 3
+  },
+  {
+    "match": "portland hills transit terminal",
+    "lat": 44.66993,
+    "lng": -63.50574,
+    "district": "District 3",
+    "n": 3
+  },
+  {
+    "match": "fielding ave",
+    "lat": 44.7064,
+    "lng": -63.60712,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "birch st",
+    "lat": 44.65741,
+    "lng": -63.6359,
+    "district": "District 10",
+    "n": 3
+  },
+  {
+    "match": "arlington ave",
+    "lat": 44.64589,
+    "lng": -63.63281,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "golf links rd",
+    "lat": 44.72631,
+    "lng": -63.65336,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "convoy run",
+    "lat": 44.71827,
+    "lng": -63.67466,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "opalridge dr",
+    "lat": 44.67312,
+    "lng": -63.54191,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "isnor dr",
+    "lat": 44.70608,
+    "lng": -63.59743,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "john savage ave",
+    "lat": 44.71684,
+    "lng": -63.58113,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "estates rd",
+    "lat": 44.65499,
+    "lng": -63.5412,
+    "district": "District 3",
+    "n": 3
+  },
+  {
+    "match": "lacewood terminal",
+    "lat": 44.66088,
+    "lng": -63.66321,
+    "district": "District 12",
+    "n": 3
+  },
+  {
+    "match": "terence bay rd",
+    "lat": 44.51971,
+    "lng": -63.75274,
+    "district": "District 13",
+    "n": 3
+  },
+  {
+    "match": "tulip st",
+    "lat": 44.67294,
+    "lng": -63.56673,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "osborne dr",
+    "lat": 44.60362,
+    "lng": -63.46969,
+    "district": "District 3",
+    "n": 3
+  },
+  {
+    "match": "poplar st",
+    "lat": 44.64552,
+    "lng": -63.60489,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "amin st",
+    "lat": 44.71004,
+    "lng": -63.67851,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "highfield st",
+    "lat": 44.62743,
+    "lng": -63.61835,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "dickson st",
+    "lat": 44.66998,
+    "lng": -63.57961,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "chadwick pl",
+    "lat": 44.66046,
+    "lng": -63.65691,
+    "district": "District 10",
+    "n": 3
+  },
+  {
+    "match": "lynnett rd",
+    "lat": 44.60421,
+    "lng": -63.60602,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "roy cres",
+    "lat": 44.72118,
+    "lng": -63.68211,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "reserve rd",
+    "lat": 44.63383,
+    "lng": -63.61261,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "venice crt",
+    "lat": 44.69933,
+    "lng": -63.53825,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "cranberry cres",
+    "lat": 44.68335,
+    "lng": -63.50219,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "silver birch dr",
+    "lat": 44.66777,
+    "lng": -63.78852,
+    "district": "District 13",
+    "n": 3
+  },
+  {
+    "match": "tacoma dr",
+    "lat": 44.67969,
+    "lng": -63.53956,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "duffus dr",
+    "lat": 44.73911,
+    "lng": -63.64779,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "lynn dr",
+    "lat": 44.66483,
+    "lng": -63.54086,
+    "district": "District 3",
+    "n": 3
+  },
+  {
+    "match": "cloverdale rd",
+    "lat": 44.65562,
+    "lng": -63.61232,
+    "district": "District 8",
+    "n": 3
+  },
+  {
+    "match": "shore club rd",
+    "lat": 44.63726,
+    "lng": -64.05614,
+    "district": "District 13",
+    "n": 3
+  },
+  {
+    "match": "perrin dr",
+    "lat": 44.82267,
+    "lng": -63.58541,
+    "district": "District 1",
+    "n": 3
+  },
+  {
+    "match": "keating rd",
+    "lat": 44.64168,
+    "lng": -63.62676,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "fenerty rd",
+    "lat": 44.80235,
+    "lng": -63.73676,
+    "district": "District 14",
+    "n": 3
+  },
+  {
+    "match": "dalkeith dr",
+    "lat": 44.67496,
+    "lng": -63.48323,
+    "district": "District 4",
+    "n": 3
+  },
+  {
+    "match": "newcombe dr",
+    "lat": 44.784,
+    "lng": -63.67517,
+    "district": "District 15",
+    "n": 3
+  },
+  {
+    "match": "hillside ave",
+    "lat": 44.76218,
+    "lng": -63.66817,
+    "district": "District 15",
+    "n": 3
+  },
+  {
+    "match": "westridge dr",
+    "lat": 44.65651,
+    "lng": -63.65462,
+    "district": "District 10",
+    "n": 3
+  },
+  {
+    "match": "ridgevale dr",
+    "lat": 44.72951,
+    "lng": -63.64864,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "sunrise walk",
+    "lat": 44.6566,
+    "lng": -63.58753,
+    "district": "District 8",
+    "n": 3
+  },
+  {
+    "match": "walker ave",
+    "lat": 44.76806,
+    "lng": -63.69913,
+    "district": "District 15",
+    "n": 3
+  },
+  {
+    "match": "graham st",
+    "lat": 44.67506,
+    "lng": -63.58052,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "clayton park dr",
+    "lat": 44.66265,
+    "lng": -63.64562,
+    "district": "District 10",
+    "n": 3
+  },
+  {
+    "match": "old ferry rd",
+    "lat": 44.66772,
+    "lng": -63.55439,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "halef crt",
+    "lat": 44.63355,
+    "lng": -63.62791,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "hazelton hill",
+    "lat": 44.71811,
+    "lng": -63.70881,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "findlay community centre park",
+    "lat": 44.672,
+    "lng": -63.5612,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "thistle st",
+    "lat": 44.66843,
+    "lng": -63.57479,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "langevin dr",
+    "lat": 44.76887,
+    "lng": -63.6715,
+    "district": "District 15",
+    "n": 3
+  },
+  {
+    "match": "banook ave",
+    "lat": 44.67523,
+    "lng": -63.5633,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "lower partridge river rd",
+    "lat": 44.71844,
+    "lng": -63.41541,
+    "district": "District 4",
+    "n": 3
+  },
+  {
+    "match": "meadowview dr",
+    "lat": 44.74012,
+    "lng": -63.65982,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "boling green cres",
+    "lat": 44.66689,
+    "lng": -63.47841,
+    "district": "District 4",
+    "n": 3
+  },
+  {
+    "match": "hines rd",
+    "lat": 44.63022,
+    "lng": -63.50803,
+    "district": "District 3",
+    "n": 3
+  },
+  {
+    "match": "hershey rd",
+    "lat": 44.66179,
+    "lng": -63.54949,
+    "district": "District 3",
+    "n": 3
+  },
+  {
+    "match": "abbington ave",
+    "lat": 44.70634,
+    "lng": -63.70385,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "kincardine dr",
+    "lat": 44.68921,
+    "lng": -63.53555,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "judy anne crt",
+    "lat": 44.76348,
+    "lng": -63.65464,
+    "district": "District 15",
+    "n": 3
+  },
+  {
+    "match": "monastery lane",
+    "lat": 44.64697,
+    "lng": -63.59676,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "mayfield ave",
+    "lat": 44.65001,
+    "lng": -63.62622,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "pockwock rd",
+    "lat": 44.747,
+    "lng": -63.81165,
+    "district": "District 14",
+    "n": 3
+  },
+  {
+    "match": "river rd",
+    "lat": 44.60694,
+    "lng": -63.6131,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "carlisle dr",
+    "lat": 44.65082,
+    "lng": -63.47837,
+    "district": "District 4",
+    "n": 3
+  },
+  {
+    "match": "artillery pl",
+    "lat": 44.64408,
+    "lng": -63.57812,
+    "district": "District 7",
+    "n": 3
+  },
+  {
+    "match": "eisener blvd",
+    "lat": 44.67009,
+    "lng": -63.52527,
+    "district": "District 3",
+    "n": 3
+  },
+  {
+    "match": "park ave",
+    "lat": 44.66887,
+    "lng": -63.56956,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "bellbrook cres",
+    "lat": 44.66296,
+    "lng": -63.50434,
+    "district": "District 3",
+    "n": 3
+  },
+  {
+    "match": "antares crt",
+    "lat": 44.69324,
+    "lng": -63.48461,
+    "district": "District 4",
+    "n": 3
+  },
+  {
+    "match": "belmont ave",
+    "lat": 44.63851,
+    "lng": -63.52292,
+    "district": "District 3",
+    "n": 3
+  },
+  {
+    "match": "millview ave",
+    "lat": 44.7071,
+    "lng": -63.66716,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "lakeview point rd",
+    "lat": 44.68017,
+    "lng": -63.5524,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "cole harbour common",
+    "lat": 44.68236,
+    "lng": -63.48625,
+    "district": "District 4",
+    "n": 3
+  },
+  {
+    "match": "gemstone crt",
+    "lat": 44.60391,
+    "lng": -63.62133,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "larry o'connell park",
+    "lat": 44.64586,
+    "lng": -63.60854,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "battery dr",
+    "lat": 44.60856,
+    "lng": -63.56809,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "milsom st",
+    "lat": 44.63987,
+    "lng": -63.63533,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "webster terr",
+    "lat": 44.6341,
+    "lng": -63.59776,
+    "district": "District 7",
+    "n": 3
+  },
+  {
+    "match": "eagle lane",
+    "lat": 44.66253,
+    "lng": -63.49703,
+    "district": "District 4",
+    "n": 3
+  },
+  {
+    "match": "catamaran rd",
+    "lat": 44.61942,
+    "lng": -63.61762,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "thomas st",
+    "lat": 44.73246,
+    "lng": -63.39734,
+    "district": "District 2",
+    "n": 3
+  },
+  {
+    "match": "frederick st",
+    "lat": 44.68073,
+    "lng": -63.57575,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "carlton st",
+    "lat": 44.64081,
+    "lng": -63.58505,
+    "district": "District 7",
+    "n": 3
+  },
+  {
+    "match": "rector st",
+    "lat": 44.67062,
+    "lng": -63.60392,
+    "district": "District 8",
+    "n": 3
+  },
+  {
+    "match": "fringe dr",
+    "lat": 44.79099,
+    "lng": -63.71316,
+    "district": "District 14",
+    "n": 3
+  },
+  {
+    "match": "alderney landing",
+    "lat": 44.66441,
+    "lng": -63.57012,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "dakin dr",
+    "lat": 44.68409,
+    "lng": -63.66118,
+    "district": "District 10",
+    "n": 3
+  },
+  {
+    "match": "arthur lismer crt",
+    "lat": 44.71985,
+    "lng": -63.67124,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "liscomb crt",
+    "lat": 44.67329,
+    "lng": -63.51267,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "maple grove ave",
+    "lat": 44.6433,
+    "lng": -63.71422,
+    "district": "District 12",
+    "n": 3
+  },
+  {
+    "match": "marketplace dr",
+    "lat": 44.69781,
+    "lng": -63.6068,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "armcrest dr",
+    "lat": 44.7896,
+    "lng": -63.68524,
+    "district": "District 15",
+    "n": 3
+  },
+  {
+    "match": "summer field way",
+    "lat": 44.66849,
+    "lng": -63.51048,
+    "district": "District 3",
+    "n": 3
+  },
+  {
+    "match": "bow st",
+    "lat": 44.67263,
+    "lng": -63.54363,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "hydrostone park",
+    "lat": 44.66211,
+    "lng": -63.59881,
+    "district": "District 8",
+    "n": 3
+  },
+  {
+    "match": "norm newman dr",
+    "lat": 44.66967,
+    "lng": -63.52604,
+    "district": "District 3",
+    "n": 3
+  },
+  {
+    "match": "aster crt",
+    "lat": 44.67305,
+    "lng": -63.67486,
+    "district": "District 12",
+    "n": 3
+  },
+  {
+    "match": "lindenwood terr",
+    "lat": 44.66118,
+    "lng": -63.52812,
+    "district": "District 3",
+    "n": 3
+  },
+  {
+    "match": "ingram dr",
+    "lat": 44.79166,
+    "lng": -63.62165,
+    "district": "District 1",
+    "n": 3
+  },
+  {
+    "match": "armshore dr",
+    "lat": 44.63919,
+    "lng": -63.617,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "sarah cres",
+    "lat": 44.68663,
+    "lng": -63.50077,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "redbank rd",
+    "lat": 44.74076,
+    "lng": -63.6531,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "windsor junction rd",
+    "lat": 44.79854,
+    "lng": -63.64147,
+    "district": "District 1",
+    "n": 3
+  },
+  {
+    "match": "waegwoltic ave",
+    "lat": 44.63793,
+    "lng": -63.59873,
+    "district": "District 7",
+    "n": 3
+  },
+  {
+    "match": "howard ave",
+    "lat": 44.62339,
+    "lng": -63.51008,
+    "district": "District 3",
+    "n": 3
+  },
+  {
+    "match": "glendale ave",
+    "lat": 44.75876,
+    "lng": -63.65796,
+    "district": "District 15",
+    "n": 3
+  },
+  {
+    "match": "desmond ave",
+    "lat": 44.65504,
+    "lng": -63.62786,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "rosemeade ave",
+    "lat": 44.66708,
+    "lng": -63.61209,
+    "district": "District 8",
+    "n": 3
+  },
+  {
+    "match": "beaver bank cross rd",
+    "lat": 44.78743,
+    "lng": -63.70302,
+    "district": "District 14",
+    "n": 3
+  },
+  {
+    "match": "monster lane",
+    "lat": 44.62005,
+    "lng": -63.50464,
+    "district": "District 3",
+    "n": 3
+  },
+  {
+    "match": "seldon st",
+    "lat": 44.64369,
+    "lng": -63.59874,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "williams st",
+    "lat": 44.64959,
+    "lng": -63.59252,
+    "district": "District 8",
+    "n": 3
+  },
+  {
+    "match": "harvard st",
+    "lat": 44.64548,
+    "lng": -63.60002,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "old beaver bank rd",
+    "lat": 44.77383,
+    "lng": -63.68962,
+    "district": "District 15",
+    "n": 3
+  },
+  {
+    "match": "esson rd",
+    "lat": 44.66185,
+    "lng": -63.54771,
+    "district": "District 3",
+    "n": 3
+  },
+  {
+    "match": "windward ave",
+    "lat": 44.68307,
+    "lng": -63.51216,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "gregory dr",
+    "lat": 44.68486,
+    "lng": -63.49822,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "brule st",
+    "lat": 44.68315,
+    "lng": -63.5885,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "bald eagle pl",
+    "lat": 44.63064,
+    "lng": -63.62998,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "matador crt",
+    "lat": 44.77983,
+    "lng": -63.68271,
+    "district": "District 15",
+    "n": 3
+  },
+  {
+    "match": "scotch pine terr",
+    "lat": 44.67184,
+    "lng": -63.67153,
+    "district": "District 12",
+    "n": 3
+  },
+  {
+    "match": "evergreen pl",
+    "lat": 44.61001,
+    "lng": -63.67839,
+    "district": "District 13",
+    "n": 3
+  },
+  {
+    "match": "collingwood crt",
+    "lat": 44.66317,
+    "lng": -63.50231,
+    "district": "District 3",
+    "n": 3
+  },
+  {
+    "match": "dahlia st",
+    "lat": 44.67065,
+    "lng": -63.5683,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "gorsebrook ave",
+    "lat": 44.62982,
+    "lng": -63.57791,
+    "district": "District 7",
+    "n": 3
+  },
+  {
+    "match": "gala crt",
+    "lat": 44.59998,
+    "lng": -63.6014,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "carlina crt",
+    "lat": 44.67427,
+    "lng": -63.67536,
+    "district": "District 12",
+    "n": 3
+  },
+  {
+    "match": "elmwood ave",
+    "lat": 44.67473,
+    "lng": -63.58611,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "ilsley ave",
+    "lat": 44.69307,
+    "lng": -63.58457,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "cabernet crt",
+    "lat": 44.64255,
+    "lng": -63.71384,
+    "district": "District 12",
+    "n": 3
+  },
+  {
+    "match": "fernhill dr",
+    "lat": 44.68289,
+    "lng": -63.59597,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "alder cres",
+    "lat": 44.7773,
+    "lng": -63.68684,
+    "district": "District 15",
+    "n": 3
+  },
+  {
+    "match": "gladstone ridge park",
+    "lat": 44.65408,
+    "lng": -63.59766,
+    "district": "District 8",
+    "n": 3
+  },
+  {
+    "match": "keepsake cres",
+    "lat": 44.60145,
+    "lng": -63.60335,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "cole dr",
+    "lat": 44.67658,
+    "lng": -63.47891,
+    "district": "District 4",
+    "n": 3
+  },
+  {
+    "match": "newcastle st",
+    "lat": 44.66625,
+    "lng": -63.55722,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "latter pond lane",
+    "lat": 44.56549,
+    "lng": -63.56811,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "arthur st",
+    "lat": 44.65824,
+    "lng": -63.55322,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "regatta point park",
+    "lat": 44.63748,
+    "lng": -63.61575,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "chebucto lane",
+    "lat": 44.64898,
+    "lng": -63.59714,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "bayne st",
+    "lat": 44.66429,
+    "lng": -63.62387,
+    "district": "District 8",
+    "n": 3
+  },
+  {
+    "match": "masthead crt",
+    "lat": 44.69274,
+    "lng": -63.68118,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "terradore lane",
+    "lat": 44.70734,
+    "lng": -63.72566,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "bedford st",
+    "lat": 44.72736,
+    "lng": -63.66733,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "richardson dr",
+    "lat": 44.8052,
+    "lng": -63.63431,
+    "district": "District 1",
+    "n": 3
+  },
+  {
+    "match": "alderwood dr",
+    "lat": 44.63892,
+    "lng": -63.62842,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "lewis dr",
+    "lat": 44.71964,
+    "lng": -63.71618,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "public gardens",
+    "lat": 44.64292,
+    "lng": -63.58215,
+    "district": "District 7",
+    "n": 3
+  },
+  {
+    "match": "catherine st",
+    "lat": 44.6794,
+    "lng": -63.58765,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "village rd",
+    "lat": 44.56317,
+    "lng": -63.563,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "jacob lane",
+    "lat": 44.70108,
+    "lng": -63.66696,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "inverness ave",
+    "lat": 44.62327,
+    "lng": -63.61196,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "outrigger cres",
+    "lat": 44.69649,
+    "lng": -63.6715,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "chappell st",
+    "lat": 44.6802,
+    "lng": -63.58154,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "hebridean dr",
+    "lat": 44.57124,
+    "lng": -63.56121,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "lakecrest dr",
+    "lat": 44.68421,
+    "lng": -63.53612,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "ferguson rd",
+    "lat": 44.68102,
+    "lng": -63.59693,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "sandy run",
+    "lat": 44.75812,
+    "lng": -63.77223,
+    "district": "District 14",
+    "n": 3
+  },
+  {
+    "match": "chocolate lake park",
+    "lat": 44.63782,
+    "lng": -63.6211,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "sackville sports stadium park",
+    "lat": 44.77314,
+    "lng": -63.67416,
+    "district": "District 15",
+    "n": 3
+  },
+  {
+    "match": "jersey dr",
+    "lat": 44.67246,
+    "lng": -63.52275,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "cook ave",
+    "lat": 44.65058,
+    "lng": -63.61998,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "carmichael st",
+    "lat": 44.64772,
+    "lng": -63.57654,
+    "district": "District 7",
+    "n": 3
+  },
+  {
+    "match": "gerrish st",
+    "lat": 44.65614,
+    "lng": -63.58479,
+    "district": "District 8",
+    "n": 3
+  },
+  {
+    "match": "daisy dr",
+    "lat": 44.82584,
+    "lng": -63.67571,
+    "district": "District 15",
+    "n": 3
+  },
+  {
+    "match": "smallwood ave",
+    "lat": 44.7052,
+    "lng": -63.49513,
+    "district": "District 4",
+    "n": 3
+  },
+  {
+    "match": "holtwood crt",
+    "lat": 44.65411,
+    "lng": -63.53309,
+    "district": "District 3",
+    "n": 3
+  },
+  {
+    "match": "maplewood dr",
+    "lat": 44.65358,
+    "lng": -63.47344,
+    "district": "District 4",
+    "n": 3
+  },
+  {
+    "match": "olivet st",
+    "lat": 44.64765,
+    "lng": -63.62373,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "belchers marsh park",
+    "lat": 44.66852,
+    "lng": -63.67373,
+    "district": "District 12",
+    "n": 3
+  },
+  {
+    "match": "pinetree cres",
+    "lat": 44.71346,
+    "lng": -63.83409,
+    "district": "District 14",
+    "n": 3
+  },
+  {
+    "match": "ellen dr",
+    "lat": 44.68617,
+    "lng": -63.50691,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "hogan crt",
+    "lat": 44.69814,
+    "lng": -63.69212,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "grennan dr",
+    "lat": 44.78641,
+    "lng": -63.68931,
+    "district": "District 15",
+    "n": 3
+  },
+  {
+    "match": "elizabeth doane dr",
+    "lat": 44.70658,
+    "lng": -63.71357,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "bedford hills rd",
+    "lat": 44.71944,
+    "lng": -63.68452,
+    "district": "District 16",
+    "n": 3
+  },
+  {
+    "match": "flatrock cres",
+    "lat": 44.63918,
+    "lng": -63.68126,
+    "district": "District 12",
+    "n": 3
+  },
+  {
+    "match": "hume st",
+    "lat": 44.68066,
+    "lng": -63.55112,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "denneb cres",
+    "lat": 44.77959,
+    "lng": -63.69728,
+    "district": "District 15",
+    "n": 3
+  },
+  {
+    "match": "lawrence st",
+    "lat": 44.64849,
+    "lng": -63.59717,
+    "district": "District 9",
+    "n": 3
+  },
+  {
+    "match": "drummond crt",
+    "lat": 44.66727,
+    "lng": -63.60892,
+    "district": "District 8",
+    "n": 3
+  },
+  {
+    "match": "darjeeling dr",
+    "lat": 44.6241,
+    "lng": -63.62157,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "sebastian pl",
+    "lat": 44.66685,
+    "lng": -63.60591,
+    "district": "District 8",
+    "n": 3
+  },
+  {
+    "match": "columbus pl",
+    "lat": 44.665,
+    "lng": -63.60363,
+    "district": "District 8",
+    "n": 3
+  },
+  {
+    "match": "idlewylde rd",
+    "lat": 44.63353,
+    "lng": -63.6233,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "guysborough ave",
+    "lat": 44.68026,
+    "lng": -63.52938,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "southwood dr",
+    "lat": 44.63001,
+    "lng": -63.57403,
+    "district": "District 7",
+    "n": 3
+  },
+  {
+    "match": "hartlen park",
+    "lat": 44.61307,
+    "lng": -63.61152,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "shubie dr",
+    "lat": 44.70679,
+    "lng": -63.55872,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "stuart harris dr",
+    "lat": 44.68722,
+    "lng": -63.50901,
+    "district": "District 6",
+    "n": 3
+  },
+  {
+    "match": "barrett rd",
+    "lat": 44.83507,
+    "lng": -63.68273,
+    "district": "District 15",
+    "n": 3
+  },
+  {
+    "match": "j. albert walker park",
+    "lat": 44.62793,
+    "lng": -63.62369,
+    "district": "District 11",
+    "n": 3
+  },
+  {
+    "match": "cheltonham crt",
+    "lat": 44.66556,
+    "lng": -63.56519,
+    "district": "District 5",
+    "n": 3
+  },
+  {
+    "match": "fox hollow dr",
+    "lat": 44.68838,
+    "lng": -63.87453,
+    "district": "District 13",
+    "n": 3
+  }
+]

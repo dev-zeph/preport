@@ -1,0 +1,190 @@
+{
+  "source": "HRM Cityworks_Service_Requests, live ArcGIS feed",
+  "source_url": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Cityworks_Service_Requests/FeatureServer/0",
+  "pulled_at": "2026-09-12T14:51:10.309Z",
+  "feed_latest_record": "2026-09-05T02:06:05.000Z",
+  "window_days": 365,
+  "window_start": "2025-09-12",
+  "total_requests_in_window": 64636,
+  "total_requests_all_time": 477343,
+  "population_basis": "2021 census HRM population 439,819 divided equally across 16 council districts. Districts are drawn to near population parity, so this approximates per-district population; it is not a per-district census count.",
+  "rate_note": "per_1000 is requests per 1,000 residents over the trailing 365 days.",
+  "median_per_1000": 145.9,
+  "channels": [
+    {
+      "channel": "INTERNAL",
+      "n": 419742
+    },
+    {
+      "channel": "311 Online",
+      "n": 41992
+    },
+    {
+      "channel": "Respond",
+      "n": 15609
+    }
+  ],
+  "resident_originated_share": 12.1,
+  "districts": [
+    {
+      "district": "District 1",
+      "district_id": 1,
+      "population": 27489,
+      "reports": 1265,
+      "reports_all_time": 10738,
+      "per_1000": 46,
+      "vs_median": 0.32,
+      "gap": "below"
+    },
+    {
+      "district": "District 2",
+      "district_id": 2,
+      "population": 27489,
+      "reports": 594,
+      "reports_all_time": 7178,
+      "per_1000": 21.6,
+      "vs_median": 0.15,
+      "gap": "below"
+    },
+    {
+      "district": "District 3",
+      "district_id": 3,
+      "population": 27489,
+      "reports": 3104,
+      "reports_all_time": 19119,
+      "per_1000": 112.9,
+      "vs_median": 0.77,
+      "gap": "below"
+    },
+    {
+      "district": "District 4",
+      "district_id": 4,
+      "population": 27489,
+      "reports": 2472,
+      "reports_all_time": 17481,
+      "per_1000": 89.9,
+      "vs_median": 0.62,
+      "gap": "below"
+    },
+    {
+      "district": "District 5",
+      "district_id": 5,
+      "population": 27489,
+      "reports": 6718,
+      "reports_all_time": 47264,
+      "per_1000": 244.4,
+      "vs_median": 1.68,
+      "gap": "above"
+    },
+    {
+      "district": "District 6",
+      "district_id": 6,
+      "population": 27489,
+      "reports": 4410,
+      "reports_all_time": 33864,
+      "per_1000": 160.4,
+      "vs_median": 1.1,
+      "gap": "near"
+    },
+    {
+      "district": "District 7",
+      "district_id": 7,
+      "population": 27489,
+      "reports": 7699,
+      "reports_all_time": 61985,
+      "per_1000": 280.1,
+      "vs_median": 1.92,
+      "gap": "above"
+    },
+    {
+      "district": "District 8",
+      "district_id": 8,
+      "population": 27489,
+      "reports": 8193,
+      "reports_all_time": 64510,
+      "per_1000": 298,
+      "vs_median": 2.04,
+      "gap": "above"
+    },
+    {
+      "district": "District 9",
+      "district_id": 9,
+      "population": 27489,
+      "reports": 6248,
+      "reports_all_time": 40256,
+      "per_1000": 227.3,
+      "vs_median": 1.56,
+      "gap": "above"
+    },
+    {
+      "district": "District 10",
+      "district_id": 10,
+      "population": 27489,
+      "reports": 4265,
+      "reports_all_time": 24999,
+      "per_1000": 155.2,
+      "vs_median": 1.06,
+      "gap": "near"
+    },
+    {
+      "district": "District 11",
+      "district_id": 11,
+      "population": 27489,
+      "reports": 4548,
+      "reports_all_time": 25837,
+      "per_1000": 165.4,
+      "vs_median": 1.13,
+      "gap": "near"
+    },
+    {
+      "district": "District 12",
+      "district_id": 12,
+      "population": 27489,
+      "reports": 3755,
+      "reports_all_time": 21674,
+      "per_1000": 136.6,
+      "vs_median": 0.94,
+      "gap": "near"
+    },
+    {
+      "district": "District 13",
+      "district_id": 13,
+      "population": 27489,
+      "reports": 1398,
+      "reports_all_time": 12205,
+      "per_1000": 50.9,
+      "vs_median": 0.35,
+      "gap": "below"
+    },
+    {
+      "district": "District 14",
+      "district_id": 14,
+      "population": 27489,
+      "reports": 2152,
+      "reports_all_time": 13881,
+      "per_1000": 78.3,
+      "vs_median": 0.54,
+      "gap": "below"
+    },
+    {
+      "district": "District 15",
+      "district_id": 15,
+      "population": 27489,
+      "reports": 3197,
+      "reports_all_time": 18386,
+      "per_1000": 116.3,
+      "vs_median": 0.8,
+      "gap": "below"
+    },
+    {
+      "district": "District 16",
+      "district_id": 16,
+      "population": 27489,
+      "reports": 4618,
+      "reports_all_time": 28361,
+      "per_1000": 168,
+      "vs_median": 1.15,
+      "gap": "above"
+    }
+  ]
+}

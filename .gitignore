@@ -1,0 +1,9 @@
+.env
+.env.local
+node_modules/
+server/data/reports.json
+server/photos/
+.DS_Store
+dist/
+.expo/
+*.log
