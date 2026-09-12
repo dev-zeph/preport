@@ -1,117 +1,278 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import "leaflet/dist/leaflet.css";
-import { API, getReports, getDistricts, CATEGORY_LABELS, SEV_COLOR, ago } from "./api";
+import "./index.css";
+
+import {
+  getReports, setStatus, subscribe, configuredBackend,
+  CATEGORY_LABELS, SEV, STATUS, clock, ago, wardOf, DISTRICT_NAMES,
+} from "./api";
+import Mark from "./components/Mark";
 import Detail from "./components/Detail";
 import MapView from "./components/MapView";
 import Coverage from "./components/Coverage";
 
+const SEV_FILTERS = [["All", "all"], ["Safety risk", "high"], ["Soon", "medium"], ["Can wait", "low"]];
+const STATUS_FILTERS = [["All", "all"], ["Open", "open"], ["New", "new"], ["Resolved", "resolved"]];
+const BLANK = { q: "", sev: "all", status: "all", cat: "all", dist: "all" };
+
+// Newest first, always. The query already orders, but the board's reading order
+// should not depend on where the rows came from.
+const byNewest = (rs) => [...rs].sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+
 export default function App() {
   const [reports, setReports] = useState([]);
-  const [districts, setDistricts] = useState(null);
-  const [selected, setSelected] = useState(null);
-  const [tab, setTab] = useState("incidents");
+  const [loadErr, setLoadErr] = useState(null);
   const [live, setLive] = useState(false);
-  const [filter, setFilter] = useState("all");
-  const arrived = useRef(new Set());
+  const [view, setView] = useState("list");
+  const [sel, setSel] = useState(null);
+  const [f, setF] = useState(BLANK);
+  const [unread, setUnread] = useState(0);
+  const [since] = useState(() => new Date());
+  const fresh = useRef(new Set());
 
   useEffect(() => {
-    getReports().then(setReports).catch(console.error);
-    getDistricts().then(setDistricts).catch(console.error);
+    getReports().then(byNewest).then(setReports).catch((e) => setLoadErr(e.message));
   }, []);
 
-  // The whole live-update feature. A row appears while you are still talking.
+  // The live queue. Postgres pushes the change, so a report filed from a phone
+  // anywhere lands here whether or not the Express server is running.
   useEffect(() => {
-    const es = new EventSource(`${API}/api/stream`);
-    es.addEventListener("hello", () => setLive(true));
-    es.addEventListener("report:new", (e) => {
-      const r = JSON.parse(e.data);
-      arrived.current.add(r.id);
-      setReports((prev) => [r, ...prev.filter((p) => p.id !== r.id)]);
+    return subscribe({
+      onInsert: (r) => {
+        fresh.current.add(r.id);
+        setReports((prev) => (prev.some((p) => p.id === r.id) ? prev : [r, ...prev]));
+        setUnread((n) => n + 1);
+      },
+      onUpdate: (r) => {
+        setReports((prev) => prev.map((p) => (p.id === r.id ? r : p)));
+        setSel((s) => (s?.id === r.id ? r : s));
+      },
+      onStatus: setLive,
     });
-    es.addEventListener("report:updated", (e) => {
-      const r = JSON.parse(e.data);
-      setReports((prev) => prev.map((p) => (p.id === r.id ? r : p)));
-      setSelected((s) => (s?.id === r.id ? r : s));
-    });
-    es.onerror = () => setLive(false);
-    es.onopen = () => setLive(true);
-    return () => es.close();
   }, []);
 
-  const onStatus = (r) => {
-    setReports((prev) => prev.map((p) => (p.id === r.id ? r : p)));
-    setSelected(r);
+  const open = (r) => {
+    if (fresh.current.delete(r.id)) setUnread((n) => Math.max(0, n - 1));
+    setSel(r);
   };
 
-  const shown = reports.filter((r) => filter === "all" || r.status === filter);
-  const newCount = reports.filter((r) => r.status === "new").length;
+  const onStatusChange = async (id, status) => {
+    // Optimistic, then corrected by whatever the database actually stored.
+    setReports((prev) => prev.map((p) => (p.id === id ? { ...p, status } : p)));
+    setSel((s) => (s?.id === id ? { ...s, status } : s));
+    try {
+      const saved = await setStatus(id, status);
+      setReports((prev) => prev.map((p) => (p.id === id ? saved : p)));
+      setSel((s) => (s?.id === id ? saved : s));
+    } catch (e) {
+      setLoadErr(`Could not save status: ${e.message}`);
+    }
+  };
+
+  const categories = useMemo(
+    () => [...new Set(reports.map((r) => r.category))].sort(),
+    [reports]
+  );
+  const wards = useMemo(
+    () => [...new Set(reports.map((r) => r.district).filter(Boolean))]
+      .sort((a, b) => +wardOf(a) - +wardOf(b)),
+    [reports]
+  );
+
+  const shown = useMemo(() => {
+    const q = f.q.trim().toLowerCase();
+    return reports.filter((r) =>
+      (f.sev === "all" || r.severity === f.sev) &&
+      (f.status === "all" || (f.status === "open" ? r.status !== "resolved" : r.status === f.status)) &&
+      (f.cat === "all" || r.category === f.cat) &&
+      (f.dist === "all" || r.district === f.dist) &&
+      (!q || `${r.location_text ?? ""} ${r.id} ${r.category} ${r.description ?? ""}`.toLowerCase().includes(q))
+    );
+  }, [reports, f]);
+
+  const dirty = JSON.stringify(f) !== JSON.stringify(BLANK);
+
+  // An empty filter is sometimes the finding, so say the nearest true thing
+  // rather than a shrug.
+  const nearest = () => {
+    if (!reports.length) return "there are no reports on the board at all yet";
+    if (f.dist !== "all") {
+      const n = reports.filter((r) => r.district === f.dist).length;
+      return n
+        ? `${f.dist} has ${n} report${n === 1 ? "" : "s"}, but none matching the rest of these filters`
+        : `${f.dist} has no reports at all, which is the kind of silence the coverage panel is about`;
+    }
+    if (f.sev !== "all") return `no reports are logged at "${SEV[f.sev].label}" right now`;
+    return "nothing on the board matches this combination";
+  };
 
   return (
-    <div className="app">
-      <header>
-        <div className="brand">Repoth <span>Public Works board · Halifax Regional Municipality</span></div>
-        <div className="live">
-          <span className={`dot ${live ? "" : "off"}`} />
-          {live ? "Live" : "Disconnected"} · {newCount} new
+    <div className="shell">
+      <div className="topbar">
+        <div className="brand">
+          <Mark />
+          <b>Repoth</b>
+          <span>Halifax Public Works</span>
         </div>
-      </header>
+        <div className="tabs">
+          {[["Incidents", "list"], ["Coverage map", "map"], ["Coverage gap", "gap"]].map(([label, v]) => (
+            <button key={v} className={view === v ? "on" : ""} onClick={() => setView(v)}>{label}</button>
+          ))}
+        </div>
+        <div style={{ flex: 1 }} />
+        <div style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 12, color: "var(--color-neutral-700)" }}>
+          <span className={`pip ${live ? "" : "off"}`} />
+          {live ? "Live queue · connected" : configuredBackend ? "Live queue · connecting" : "Supabase not configured"}
+        </div>
+        <div className="who"><i>RM</i><span>R. MacKinnon</span></div>
+      </div>
 
-      <nav>
-        {["incidents", "map", "coverage"].map((t) => (
-          <button key={t} className={tab === t ? "on" : ""} onClick={() => setTab(t)}>
-            {t === "incidents" ? `Incidents (${reports.length})` : t === "map" ? "Map" : "Coverage gap"}
-          </button>
-        ))}
-      </nav>
-
-      <main>
-        {tab === "incidents" && (
+      <div className="body">
+        {view === "list" && (
           <>
-            <div className="list">
-              <div style={{ padding: "10px 18px", borderBottom: "1px solid var(--line)", display: "flex", gap: 6 }}>
-                {["all", "new", "acknowledged", "assigned", "resolved"].map((f) => (
-                  <button
-                    key={f}
-                    onClick={() => setFilter(f)}
-                    style={{
-                      background: filter === f ? "var(--accent)" : "transparent",
-                      color: filter === f ? "#fff" : "var(--dim)",
-                      border: "1px solid var(--line)", borderRadius: 999,
-                      padding: "4px 10px", fontSize: 12,
-                    }}
-                  >{f}</button>
-                ))}
+            <div className="filters">
+              <div>
+                <label className="lbl">Search</label>
+                <input
+                  className="input" style={{ width: 220 }} value={f.q}
+                  placeholder="Street, reference, words…"
+                  onChange={(e) => setF({ ...f, q: e.target.value })}
+                />
               </div>
-              {shown.length === 0 && <div className="empty">No reports match this filter.</div>}
-              {shown.map((r) => (
-                <div
-                  key={r.id}
-                  className={`row ${selected?.id === r.id ? "on" : ""} ${arrived.current.has(r.id) ? "new" : ""}`}
-                  onClick={() => setSelected(r)}
-                >
-                  <span className="sev" style={{ background: SEV_COLOR[r.severity] ?? "#888" }} />
-                  <div style={{ minWidth: 0, flex: 1 }}>
-                    <h4>{CATEGORY_LABELS[r.category] ?? r.category}</h4>
-                    <p>{r.location_text ?? "Location not given"}</p>
-                    <div className="meta">
-                      <span>{ago(r.created_at)}</span>
-                      <span>·</span>
-                      <span>{r.district ?? "not mapped"}</span>
-                      <span>·</span>
-                      <span>{r.status}</span>
-                      {r.safety_risk && <span className="tag risk">risk</span>}
-                      {r.source === "hrm_import" && <span className="tag seed">HRM data</span>}
-                    </div>
+              <div>
+                <label className="lbl">Severity</label>
+                <div className="seg-row">
+                  {SEV_FILTERS.map(([label, v]) => (
+                    <button key={v} className={f.sev === v ? "on" : ""} onClick={() => setF({ ...f, sev: v })}>
+                      {v !== "all" && <span className="dot" style={{ width: 9, height: 9, background: SEV[v].c }} />}
+                      {label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <label className="lbl">Status</label>
+                <div className="seg-row">
+                  {STATUS_FILTERS.map(([label, v]) => (
+                    <button key={v} className={f.status === v ? "on" : ""} onClick={() => setF({ ...f, status: v })}>{label}</button>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <label className="lbl">Category</label>
+                <select className="input" style={{ width: 160, height: 34 }} value={f.cat} onChange={(e) => setF({ ...f, cat: e.target.value })}>
+                  <option value="all">All categories</option>
+                  {categories.map((c) => <option key={c} value={c}>{CATEGORY_LABELS[c] ?? c}</option>)}
+                </select>
+              </div>
+              <div>
+                <label className="lbl">District</label>
+                <select className="input" style={{ width: 210, height: 34 }} value={f.dist} onChange={(e) => setF({ ...f, dist: e.target.value })}>
+                  <option value="all">All districts</option>
+                  {wards.map((d) => (
+                    <option key={d} value={d}>{d}{DISTRICT_NAMES[wardOf(d)] ? ` · ${DISTRICT_NAMES[wardOf(d)]}` : ""}</option>
+                  ))}
+                </select>
+              </div>
+              <div style={{ flex: 1 }} />
+              <button className="btn btn-secondary" disabled={!dirty} onClick={() => setF(BLANK)}
+                      style={{ fontFamily: "var(--font-heading)" }}>Clear filters</button>
+            </div>
+
+            <div className="strip">
+              <span className="count">
+                {dirty ? `${shown.length} of ${reports.length} reports match` : `${reports.length} reports · all time`}
+              </span>
+              {unread > 0 && (
+                <button className="unread" onClick={() => { fresh.current.clear(); setUnread(0); }}>
+                  <i />{unread} new since {clock(since.toISOString())}
+                </button>
+              )}
+              <div style={{ flex: 1 }} />
+              <span className="disclosure">
+                <span className="tag tag-outline">Live data</span>
+                Reports are real and arrive from Supabase. Seed rows marked HRM are real service requests from the city's feed.
+              </span>
+            </div>
+
+            <div className="tablewrap">
+              {loadErr && (
+                <div className="empty">
+                  <Mark w={34} />
+                  <h3>The board could not load</h3>
+                  <p style={{ color: "var(--sev-high)" }}>{loadErr}</p>
+                </div>
+              )}
+              {!loadErr && (
+                <table className="table" style={{ width: "100%" }}>
+                  <thead>
+                    <tr>
+                      <th style={{ paddingLeft: 24, width: 118 }}>Received</th>
+                      <th>Location</th>
+                      <th style={{ width: 120 }}>Category</th>
+                      <th style={{ width: 150 }}>Severity</th>
+                      <th style={{ width: 132 }}>Status</th>
+                      <th style={{ width: 64 }}>Photo</th>
+                      <th style={{ width: 70, paddingRight: 24 }}>Ward</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {shown.map((r) => {
+                      const sv = SEV[r.severity] ?? SEV.medium;
+                      const st = STATUS[r.status] ?? STATUS.new;
+                      return (
+                        <tr key={r.id} onClick={() => open(r)}
+                            className={`${sel?.id === r.id ? "sel" : ""} ${fresh.current.has(r.id) ? "fresh" : ""}`}>
+                          <td>
+                            <div style={{ fontVariantNumeric: "tabular-nums", fontSize: 13 }}>{clock(r.created_at)}</div>
+                            <div style={{ fontSize: 11, color: "var(--color-neutral-600)" }}>{ago(r.created_at)}</div>
+                          </td>
+                          <td>
+                            <div style={{ fontSize: 14 }}>{r.location_text ?? "Location not given"}</div>
+                            <div style={{ fontSize: 11, color: "var(--color-neutral-600)", fontVariantNumeric: "tabular-nums" }}>{r.id}</div>
+                          </td>
+                          <td style={{ fontSize: 13 }}>{CATEGORY_LABELS[r.category] ?? r.category}</td>
+                          <td>
+                            <span style={{ display: "inline-flex", alignItems: "center", gap: 8, fontSize: 13 }}>
+                              <span className="dot" style={{ width: 10, height: 10, background: sv.c }} />{sv.label}
+                            </span>
+                          </td>
+                          <td><span className="pill" style={{ color: st.c }}>{st.label}</span></td>
+                          <td style={{ fontSize: 13, color: r.photo ? "var(--color-text)" : "var(--color-neutral-500)" }}>
+                            {r.photo ? "●" : "—"}
+                          </td>
+                          <td style={{ fontSize: 12.5, fontVariantNumeric: "tabular-nums", color: "var(--color-neutral-700)" }}>
+                            {wardOf(r.district) || "—"}
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              )}
+              {!loadErr && shown.length === 0 && (
+                <div className="empty">
+                  <Mark w={34} />
+                  <h3>No reports match these filters</h3>
+                  <p>
+                    The nearest thing: {nearest()}. Dropping the district filter usually explains a gap like
+                    this, and if it does not, that silence is worth a look on the coverage panel.
+                  </p>
+                  <div style={{ display: "flex", gap: 10 }}>
+                    <button className="btn btn-primary" style={{ fontFamily: "var(--font-heading)" }} onClick={() => setF(BLANK)}>Clear filters</button>
+                    <button className="btn btn-secondary" style={{ fontFamily: "var(--font-heading)" }} onClick={() => setView("gap")}>Open coverage gap</button>
                   </div>
                 </div>
-              ))}
+              )}
             </div>
-            <Detail report={selected} onStatus={onStatus} />
           </>
         )}
-        {tab === "map" && <MapView reports={reports} onSelect={(r) => { setSelected(r); setTab("incidents"); }} />}
-        {tab === "coverage" && <Coverage data={districts} />}
-      </main>
+
+        {view === "map" && <MapView reports={reports} selected={sel} onSelect={open} />}
+        {view === "gap" && <Coverage />}
+
+        {sel && <Detail report={sel} onClose={() => setSel(null)} onStatus={onStatusChange} />}
+      </div>
     </div>
   );
 }

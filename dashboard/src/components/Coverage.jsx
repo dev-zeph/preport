@@ -1,130 +1,163 @@
-import {
-  BarChart, Bar, XAxis, YAxis, Tooltip, ReferenceLine, ResponsiveContainer, Cell,
-} from "recharts";
+import { districts as D, DISTRICT_NAMES, wardOf } from "../api";
 
-const GAP_COLOR = { below: "#FF5A5A", near: "#8D99AB", above: "#39C07F" };
+/**
+ * The coverage gap panel. This is the argument, not an appendix.
+ *
+ * It departs from the prototype in one important way. The design's model scales
+ * each district's expected rate by a road-condition index, and discloses that
+ * both the counts and that index are invented. Our counts are real, pulled from
+ * HRM's live Cityworks feed. The road index is not available to us at all: it
+ * would come from the city's pavement-condition survey. So rather than invent
+ * one to match the design, the expected rate here is the municipal average, and
+ * the panel says so. Everything else about the chart is as designed.
+ */
+export default function Coverage() {
+  if (!D?.districts?.length) {
+    return <div className="gap"><div className="inner"><p>Coverage data is missing. Run <code>npm run pull-data</code>.</p></div></div>;
+  }
 
-export default function Coverage({ data }) {
-  if (!data) return <div className="pane"><p className="muted">Loading coverage data.</p></div>;
+  const rows = D.districts.map((d) => {
+    const rate = d.per_1000;
+    // No road-condition index available, so every district is held to the same
+    // municipal average rather than to a fabricated one.
+    const expected = D.median_per_1000;
+    const missing = Math.round(((expected - rate) * d.population) / 1000);
+    return { ...d, rate, expected, missing, ward: wardOf(d.district), name: DISTRICT_NAMES[wardOf(d.district)] ?? d.district };
+  }).sort((a, b) => b.missing - a.missing);
 
-  const rows = [...data.districts].sort((a, b) => a.per_1000 - b.per_1000);
-  const quiet = rows.filter((d) => d.gap === "below");
-  const lowest = rows[0];
-  const highest = rows[rows.length - 1];
-  const spread = (highest.per_1000 / lowest.per_1000).toFixed(1);
+  const top = Math.max(...rows.map((r) => Math.max(r.rate, r.expected)));
+  const scale = Math.ceil(top / 50) * 50;
+  const ticks = [0, 0.25, 0.5, 0.75, 1].map((t) => Math.round(scale * t));
+  const worst = rows[0];
+  const flaggedAt = 500;   // reports a year. Below this the gap is noise.
+
+  const fmt = (n) => n.toLocaleString("en-CA");
 
   return (
-    <div className="pane">
-      <h2>Coverage gap</h2>
-      <p className="muted">
-        Service requests per 1,000 residents, by council district, over the trailing 12 months.
-      </p>
+    <div className="gap">
+      <div className="inner">
+        <div className="kicker" style={{ marginBottom: 12 }}>Coverage gap · reports per 1,000 residents</div>
+        <h1>Which parts of Halifax aren't telling us anything?</h1>
 
-      <div className="stats">
-        <div className="stat">
-          <b>{spread}x</b>
-          <small>between the quietest and loudest district</small>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "28px 40px", alignItems: "flex-start", marginBottom: 26 }}>
+          <p className="method">
+            A district that reports less than its population predicts is not necessarily a district with fewer
+            problems. It may be one the city is not hearing from. The solid bar is what each district actually
+            reported over the trailing year; the hatched stretch is what it would have reported at the municipal
+            median rate. The hatching is the silence. Council districts are drawn to near population parity by
+            electoral boundary law, so the spread below is not explained by district size.
+          </p>
+          <div style={{ flex: "0 1 320px", borderLeft: "2px solid var(--sev-high)", paddingLeft: 18 }}>
+            <div style={{ font: "600 10px/1 var(--font-body)", letterSpacing: ".14em", textTransform: "uppercase", color: "var(--sev-high)", marginBottom: 9 }}>
+              The one to look at
+            </div>
+            <div style={{ font: "600 19px/1.25 var(--font-heading)", marginBottom: 8 }}>
+              {worst.district} · {worst.name}
+            </div>
+            <p style={{ margin: 0, fontSize: 14, lineHeight: 1.58, color: "var(--color-neutral-800)" }}>
+              {worst.rate} reports per 1,000 residents against a municipal median of {worst.expected}. That is about{" "}
+              <strong style={{ fontWeight: 600 }}>{fmt(worst.missing)} reports a year</strong> the city never hears
+              from this district.
+            </p>
+          </div>
         </div>
-        <div className="stat">
-          <b>{data.resident_originated_share}%</b>
-          <small>of all requests start with a resident, not staff</small>
+
+        <div style={{ display: "grid", gridTemplateColumns: "272px 1fr 176px", gap: "0 18px", alignItems: "center", paddingBottom: 8, borderBottom: "1px solid var(--color-text)" }}>
+          <div className="lbl" style={{ marginBottom: 0 }}>District · sorted by gap</div>
+          <div style={{ position: "relative", height: 14 }}>
+            {ticks.map((t, i) => (
+              <span key={t} style={{
+                position: "absolute", left: `${(i / (ticks.length - 1)) * 100}%`,
+                transform: i === ticks.length - 1 ? "translateX(-100%)" : i === 0 ? "none" : "translateX(-50%)",
+                font: "600 9.5px/1 var(--font-body)", letterSpacing: ".1em",
+                color: "var(--color-neutral-600)", fontVariantNumeric: "tabular-nums",
+              }}>{t}</span>
+            ))}
+          </div>
+          <div className="lbl" style={{ marginBottom: 0, textAlign: "right" }}>Reports never made</div>
         </div>
-        <div className="stat">
-          <b>{quiet.length}</b>
-          <small>districts reporting below the municipal median</small>
+
+        {rows.map((d) => {
+          const flagged = d.missing > flaggedAt;
+          const aw = Math.max(0, Math.min(100, (d.rate / scale) * 100));
+          const ew = Math.max(0, Math.min(100, (d.expected / scale) * 100));
+          return (
+            <div key={d.district} className={`gaprow ${flagged ? "flagged" : ""}`}>
+              <div style={{ minWidth: 0, paddingRight: 10 }}>
+                <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
+                  <span style={{ font: "600 10px/1 var(--font-body)", fontVariantNumeric: "tabular-nums", color: "var(--color-neutral-600)", flex: "none" }}>
+                    {d.ward}
+                  </span>
+                  <span style={{
+                    font: `${flagged ? 600 : 400} 13.5px/1.25 var(--font-heading)`,
+                    overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
+                  }}>{d.name}</span>
+                </div>
+                <div style={{ fontSize: 11, color: "var(--color-neutral-600)", marginTop: 3 }}>
+                  {fmt(d.reports)} reports · {fmt(d.population)} residents
+                </div>
+              </div>
+              <div className="bar">
+                <div className="grid" />
+                <div className="actual" style={{ width: `${aw}%` }} />
+                {d.missing > 0 && <div className="deficit" style={{ left: `${aw}%`, width: `${Math.max(0, ew - aw)}%` }} />}
+                <div className="tick" style={{ left: `${ew}%` }} />
+              </div>
+              <div style={{ textAlign: "right", fontVariantNumeric: "tabular-nums" }}>
+                <div style={{ font: `600 ${flagged ? 15 : 13}px/1 var(--font-heading)`, color: d.missing > 0 ? "var(--sev-high)" : "var(--color-neutral-600)" }}>
+                  {d.missing > 0 ? `−${fmt(d.missing)} / yr` : "at or above"}
+                </div>
+                <div style={{ fontSize: 11, color: "var(--color-neutral-600)", marginTop: 3 }}>
+                  {d.rate} of {d.expected} per 1,000
+                </div>
+              </div>
+            </div>
+          );
+        })}
+
+        <div className="legend">
+          <span><span style={{ width: 26, height: 11, background: "var(--color-neutral-500)" }} />Reported</span>
+          <span><span style={{ width: 26, height: 11, background: "repeating-linear-gradient(135deg,var(--sev-high) 0 2px,transparent 2px 5px)", border: "1px solid var(--sev-high)" }} />Expected but never reported</span>
+          <span><span style={{ width: 2, height: 16, background: "var(--color-text)" }} />Municipal median rate</span>
         </div>
-        <div className="stat">
-          <b>{data.total_requests_in_window.toLocaleString()}</b>
-          <small>requests in the window ({data.total_requests_all_time.toLocaleString()} all time)</small>
+
+        <div className="realbox">
+          <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
+            <span className="tag tag-outline" style={{ fontSize: 9.5, letterSpacing: ".1em", textTransform: "uppercase" }}>
+              What's real on this page
+            </span>
+          </div>
+          <div className="realgrid">
+            <div>
+              <strong>Real.</strong> Every request count comes from HRM's live Cityworks service request feed:{" "}
+              {fmt(D.total_requests_all_time)} records all time, {fmt(D.total_requests_in_window)} in the window{" "}
+              {D.window_start} to {String(D.feed_latest_record).slice(0, 10)}. Nothing here is synthetic.
+            </div>
+            <div>
+              <strong>A correction to the brief.</strong> The brief states HRM 311 data ends December 2024. That is
+              true of the published 311 extract. The operational feed used here is current to{" "}
+              {String(D.feed_latest_record).slice(0, 10)}.
+            </div>
+            <div>
+              <strong>Approximated.</strong> {D.population_basis}
+            </div>
+            <div>
+              <strong>Not available.</strong> A road-condition index. The city's pavement-condition survey would let
+              the expected rate scale with how bad each district's roads actually are. Without it, every district is
+              held to the municipal median instead.
+            </div>
+            <div>
+              <strong>Not claimed.</strong> Nothing here says a quiet district has fewer problems. It says the city
+              has not heard from it, nobody has checked whether that silence is real, and the city's response
+              follows the record. That is the finding.
+            </div>
+            <div>
+              <strong>Who opens a request.</strong> Only {D.resident_originated_share}% of all service requests begin
+              with a resident. The rest are opened internally by city staff.
+            </div>
+          </div>
         </div>
       </div>
-
-      <h3>Reports per 1,000 residents per year</h3>
-      <div className="card" style={{ height: 360 }}>
-        <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={rows} margin={{ top: 8, right: 16, bottom: 40, left: 4 }}>
-            <XAxis
-              dataKey="district" stroke="#8D99AB" fontSize={11}
-              angle={-45} textAnchor="end" interval={0}
-              tickFormatter={(d) => d.replace("District ", "D")}
-            />
-            <YAxis stroke="#8D99AB" fontSize={11} />
-            <Tooltip
-              contentStyle={{ background: "#171C24", border: "1px solid #252C38", borderRadius: 8 }}
-              labelStyle={{ color: "#F2F5F9" }}
-              formatter={(v, _n, p) => [
-                `${v} per 1,000  (${p.payload.reports.toLocaleString()} requests)`,
-                p.payload.gap === "below" ? "Below median" :
-                p.payload.gap === "above" ? "Above median" : "Near median",
-              ]}
-            />
-            <ReferenceLine
-              y={data.median_per_1000} stroke="#4C8DFF" strokeDasharray="4 4"
-              label={{ value: `median ${data.median_per_1000}`, fill: "#4C8DFF", fontSize: 11, position: "right" }}
-            />
-            <Bar dataKey="per_1000" radius={[4, 4, 0, 0]}>
-              {rows.map((d) => <Cell key={d.district} fill={GAP_COLOR[d.gap]} />)}
-            </Bar>
-          </BarChart>
-        </ResponsiveContainer>
-      </div>
-
-      <h3>What this does and does not show</h3>
-      <div className="note">
-        <p style={{ marginTop: 0 }}>
-          Low reports per capita is <b>not</b> proof of unmet need. It could mean fewer problems,
-          or different problems, or a district that phones instead of clicking.
-        </p>
-        <p style={{ marginBottom: 0 }}>
-          What the data supports is narrower, and harder to argue with: {quiet.map((d) => d.district.replace("District ", "D")).join(", ")} are
-          quiet in the record. The city's response follows the record. Nobody has checked whether
-          the quiet is real. {lowest.district} logs {lowest.per_1000} requests per 1,000 residents
-          against {highest.district}'s {highest.per_1000}, and council districts are drawn to roughly
-          equal population, so that {spread}x gap is not explained by district size.
-        </p>
-      </div>
-
-      <h3>Source and method</h3>
-      <dl className="kv">
-        <dt>Dataset</dt>
-        <dd>
-          HRM <code>Cityworks_Service_Requests</code>, live ArcGIS feed.{" "}
-          <a href={data.source_url} target="_blank" rel="noreferrer" style={{ color: "var(--accent)" }}>
-            endpoint
-          </a>
-        </dd>
-        <dt>Window</dt>
-        <dd>{data.window_start} to {data.feed_latest_record.slice(0, 10)} ({data.window_days} days)</dd>
-        <dt>Latest record</dt>
-        <dd>
-          {data.feed_latest_record.slice(0, 10)}. The widely published HRM 311 extract ends
-          December 2024; this live operational feed is current.
-        </dd>
-        <dt>Population</dt>
-        <dd className="muted">{data.population_basis}</dd>
-        <dt>Pulled</dt>
-        <dd className="muted">{new Date(data.pulled_at).toLocaleString()}</dd>
-      </dl>
-
-      <h3>How requests reach the city</h3>
-      <dl className="kv">
-        {data.channels.map((c) => (
-          <Fragmentish key={c.channel} channel={c.channel} n={c.n} total={data.total_requests_all_time} />
-        ))}
-      </dl>
-      <p className="muted" style={{ fontSize: 12, marginTop: 10 }}>
-        "INTERNAL" means staff opened the request. Only {data.resident_originated_share}% begin
-        with a resident, which is the channel this project is trying to widen.
-      </p>
     </div>
-  );
-}
-
-function Fragmentish({ channel, n, total }) {
-  return (
-    <>
-      <dt>{channel}</dt>
-      <dd>{n.toLocaleString()} <span className="muted">({((n / total) * 100).toFixed(1)}%)</span></dd>
-    </>
   );
 }
